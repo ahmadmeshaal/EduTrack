@@ -1,208 +1,148 @@
+* {
+  box-sizing: border-box;
+}
 
-.searchbar {
-  height: 42px;
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #f5f7f7;
+  font-family: Arial, sans-serif;
+  color: #111827;
+}
 
+.grades-controls {
   display: flex;
   align-items: center;
-  flex: 1;
-  gap: 8px;
-
-  padding: 0 13px;
-
-  background-color: white;
-
-  border: 1px solid #dfe5e5;
-  border-radius: 10px;
+  gap: 10px;
+  margin: 0 0 18px 0;
 }
 
-.search input::placeholder {
-  color: #71848a;
-}
-
-.searchbar input {
-  width: 100%;
-
-  border: none;
-  outline: none;
-
-  font-size: 14px;
-}
-
-.archive-btn {
-  color: #000;
-  height: 44px;
-
-  border: 1px solid #e7ebeb;
-
+.grade-control {
+  height: 45px;
   padding: 0 18px;
 
-  background-color: white;
+  background-color: #ffffff;
+  color: #374151;
 
+  border: 1px solid #e1e6e6;
   border-radius: 10px;
 
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 
   cursor: pointer;
 }
 
+.export-control {
+  background-color: #087f78;
+  color: #ffffff;
+  border-color: #087f78;
+  font-weight: 600;
+}
 
 .table-wrapper {
-  width: calc(100% - 40px);
-  margin: 0 20px;
+  width: 100%;
   overflow-x: auto;
 }
 
 .student-table {
   width: 100%;
   min-width: 780px;
+
   border-collapse: separate;
   border-spacing: 0;
 
-  table-layout: fixed;
-
-  color: #333;
   background-color: #ffffff;
 
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border: 1px solid #dfe5e5;
+  border-radius: 14px;
 
+  overflow: hidden;
 }
 
-
 .student-table thead th {
-  background-color: #f9fafb;
-  color: #6b7280;
+  height: 43px;
+
+  background-color: #f8faf9;
+  color: #60747a;
+
+  padding: 0 20px;
 
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 
   text-align: left;
 
-  padding: 16px 20px;
-
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #dfe5e5;
 }
 
+.student-table tbody td {
+  height: 58px;
 
+  padding: 0 20px;
 
-
-.student-table thead th:last-child,
-.student-table tbody td:last-child {
-  text-align: right;
-} 
-
-
-.student-table tbody tr {
-  transition: background-color 0.2s ease;
-}
-
-.student-table tbody tr:not(:last-child) td {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-
-.student-table td {
-  padding: 14px 20px;
-
-  font-size: 14px;
+  font-size: 15px;
+  color: #50666d;
 
   vertical-align: middle;
+
+  border-bottom: 1px solid #e3e7e7;
 }
 
-
-.student-info {
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
+.student-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
-
-.avatar {
-  width: 36px;
-  height: 36px;
-
-  border-radius: 50%;
-
-  background-color: #e6f4f1;
-  color: #0d9488;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 600;
-  font-size: 14px;
-
-  flex-shrink: 0;
+.student-table tbody td:first-child {
+  color: #071d2b;
+  font-weight: 500;
 }
 
-
-.name {
-  font-weight: 600;
-  color: #111827;
+.student-table th:nth-child(1),
+.student-table td:nth-child(1) {
+  width: 50%;
 }
 
-
-.student-id,
-.student-attendance {
-  color: #6b7280;
+.student-table th:nth-child(2),
+.student-table td:nth-child(2),
+.student-table th:nth-child(3),
+.student-table td:nth-child(3),
+.student-table th:nth-child(4),
+.student-table td:nth-child(4) {
+  width: 10%;
 }
 
-
-.student-grade {
-  color: #374151;
+.student-table th:nth-child(5),
+.student-table td:nth-child(5) {
+  width: 10%;
 }
 
-.student-grade strong {
-  color: #111827;
+.student-table th:last-child,
+.student-table td:last-child {
+  width: 10%;
+  text-align: right;
+}
+
+.student-average {
+  color: #111827 !important;
   font-weight: 700;
 }
 
-
-.actions {
-  display: flex;
+.grade-badge {
+  display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
-  gap: 8px;
-}
+  min-width: 31px;
+  height: 26px;
 
+  padding: 0 9px;
 
-.actions button {
-  padding: 6px 14px;
+  background-color: #e6f1ef;
+  color: #087f78;
 
-  border-radius: 6px;
+  border-radius: 7px;
 
   font-size: 13px;
-  font-weight: 500;
-
-  cursor: pointer;
-
-  background-color: #ffffff;
-
-  border: 1px solid #d1d5db;
-
-  color: #374151;
-
-  transition: all 0.2s ease;
+  font-weight: 600;
 }
-
-.actions button:hover {
-  background-color: #f9fafb;
-}
-
-
-.actions .btn-delete {
-  color: #dc2626;
-
-  border-color: #fca5a5;
-
-  background-color: #ffffff;
-}
-
-.actions .btn-delete:hover {
-  background-color: #fef2f2;
-}
-
