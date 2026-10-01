@@ -59,49 +59,11 @@
     </aside>
 
     <main class="main">
-      <header class="navbar">
-        <div class="search">
-          <span>⌕</span>
-          <input type="text" placeholder="Search..." />
-        </div>
-
-        <button class="add-btn">+ Add new</button>
-
-        <div class="user-icon">M</div>
-      </header>
-
       <section class="Dynmic"></section>
     </main>
 
-    <script>
-      function loadPage() {
-        let page = location.hash;
+    <script src="/js/routing.js">
 
-        if (page === "#/students") {
-          page = "students.html";
-        } else if (page === "#/assignments") {
-          page = "assignments.html";
-        } else if (page === "#/quizzes") {
-          page = "quizzes.html";
-        } else if (page === "#/exams") {
-          page = "exams.html";
-        } else if (page === "#/grades") {
-          page = "grades.html";
-        } else {
-          page = "dashboard.html";
-        }
-
-        fetch("/pages/" + page)
-          .then((response) => response.text())
-          .then((data) => {
-            dynamic.innerHTML = data;
-          });
-      }
-
-      window.addEventListener("hashchange", loadPage);
-      const dynamic = document.querySelector(".Dynmic");
-
-      loadPage();
     </script>
   </body>
 </html>
