@@ -1,11 +1,9 @@
-
 .searchbar {
-  
   height: 42px;
 
   display: flex;
   align-items: center;
-    flex: 1;
+  flex: 1;
   gap: 8px;
 
   padding: 0 13px;
@@ -16,11 +14,9 @@
   border-radius: 10px;
 }
 
-
 .search input::placeholder {
   color: #71848a;
 }
-
 
 .searchbar input {
   width: 100%;
@@ -30,12 +26,12 @@
 
   font-size: 14px;
 }
-.archive-btn{
 
- color: #000;
- height: 44px;
- border:1px solid #e7ebeb;
- 
+.archive-btn {
+  color: #000;
+  height: 44px;
+
+  border: 1px solid #e7ebeb;
 
   padding: 0 18px;
 
@@ -47,7 +43,165 @@
   font-weight: 600;
 
   cursor: pointer;
+}
 
 
+.table-wrapper {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  table-layout: fixed;
+
+  color: #333;
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
 
 }
+
+
+.student-table thead th {
+  background-color: #f9fafb;
+  color: #6b7280;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: left;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+
+.student-table thead th:last-child,
+.student-table tbody td:last-child {
+  text-align: right;
+} 
+
+
+.student-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.student-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.student-table td {
+  padding: 14px 20px;
+
+  font-size: 14px;
+
+  vertical-align: middle;
+}
+
+
+.student-info {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.avatar {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: #e6f4f1;
+  color: #0d9488;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  flex-shrink: 0;
+}
+
+
+.name {
+  font-weight: 600;
+  color: #111827;
+}
+
+
+.student-id,
+.student-attendance {
+  color: #6b7280;
+}
+
+
+.student-grade {
+  color: #374151;
+}
+
+.student-grade strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+
+.actions button {
+  padding: 6px 14px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+
+  border: 1px solid #d1d5db;
+
+  color: #374151;
+
+  transition: all 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #f9fafb;
+}
+
+
+.actions .btn-delete {
+  color: #dc2626;
+
+  border-color: #fca5a5;
+
+  background-color: #ffffff;
+}
+
+.actions .btn-delete:hover {
+  background-color: #fef2f2;
+}
+
