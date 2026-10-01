@@ -10,7 +10,6 @@ body {
   color: #18333b;
 }
 
-
 .sidebar {
   width: 260px;
   height: 100vh;
@@ -19,15 +18,14 @@ body {
   left: 0;
   top: 0;
 
-  background-color: white;
   border-right: 1px solid #e1e6e6;
 
   padding: 30px 16px;
 
   display: flex;
   flex-direction: column;
+  background-color: #f7f9f9;
 }
-
 
 .profile {
   display: flex;
@@ -59,7 +57,6 @@ body {
   color: #587079;
   font-size: 14px;
 }
-
 
 .menu {
   display: flex;
@@ -116,7 +113,6 @@ body {
   cursor: pointer;
 }
 
-
 .teacher {
   display: flex;
   align-items: center;
@@ -152,12 +148,10 @@ body {
   font-size: 12px;
 }
 
-
 .main {
   margin-left: 260px;
   min-height: 100vh;
 }
-
 
 .navbar {
   height: 90px;
@@ -172,7 +166,6 @@ body {
 
   background-color: #f7f9f9;
 }
-
 
 .search {
   width: 270px;
@@ -209,7 +202,6 @@ body {
   color: #71848a;
 }
 
-
 .add-btn {
   height: 44px;
 
@@ -231,7 +223,6 @@ body {
   background-color: #066d67;
 }
 
-
 .user-icon {
   width: 42px;
   height: 42px;
@@ -247,7 +238,6 @@ body {
 
   font-size: 14px;
 }
-
 
 .Issa {
   padding: 20px 35px 40px;
@@ -286,7 +276,6 @@ body {
   color: #71848a;
   font-size: 14px;
 }
-
 
 @media (max-width: 800px) {
   .sidebar {
