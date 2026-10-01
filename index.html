@@ -74,8 +74,6 @@
     </main>
 
     <script>
-      const dynamic = document.querySelector(".Dynmic");
-
       function loadPage() {
         let page = location.hash;
 
@@ -101,6 +99,7 @@
       }
 
       window.addEventListener("hashchange", loadPage);
+      const dynamic = document.querySelector(".Dynmic");
 
       loadPage();
     </script>
