@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
-        <link rel="stylesheet" href="CSS/student.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grades</title>
+  <link rel="stylesheet" href="CSS/grades.css">
 </head>
 <body>
 
-
-
-
-    <header class="navbar">
-        <div class="searchbar">
-          <span>⌕</span>
-          <input type="text" placeholder="Search students by name or ID..." />
-        </div>
-        <button class="archive-btn">Fillter</button>
-
-        <button class="add-btn">+ Add new</button>
-         
-        
-      </header>
-
-
-
-
-<div class="table-wrapper">
-<table class="student-table">
-  <thead>
-    <tr>
-      <th>Student</th>
-      <th>ID</th>
-      <th>Grade</th>
-      <th>Attendance</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="student-info">
-        <span class="avatar">A</span>
-        <span class="name">Ava Johnson</span>
-      </td>
-      <td class="student-id">ST-001</td>
-      <td class="student-grade"><strong>A</strong> · 92%</td>
-      <td class="student-attendance">96%</td>
-      <td>
-        <div class="actions">
-          <button class="btn-edit">Edit</button>
-          <button class="btn-archive">Archive</button>
-          <button class="btn-delete">Delete</button>
-        </div>
-      </td>
-    </tr>
-
-
-
-    <tr>
-      <td class="student-info">
-        <span class="avatar">A</span>
-        <span class="name">Liam Smith</span>
-      </td>
-      <td class="student-id">ST-002</td>
-      <td class="student-grade"><strong>B</strong> · 88%</td>
-      <td class="student-attendance">87%</td>
-      <td>
-        <div class="actions">
-          <button class="btn-edit">Edit</button>
-          <button class="btn-archive">Archive</button>
-          <button class="btn-delete">Delete</button>
-        </div>
-      </td>
-    </tr>
-
-
-    
-  </tbody>
-</table>
+<div class="grades-controls">
+  <button type="button" class="grade-control">Grade 5-A</button>
+  <button type="button" class="grade-control">Fall term</button>
+  <button type="button" class="grade-control export-control">Export</button>
 </div>
 
+<div class="table-wrapper">
+  <table class="student-table">
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Assignments</th>
+        <th>Quizzes</th>
+        <th>Exams</th>
+        <th>Average</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <tr>
+        <td>Ava Johnson</td>
+        <td>92%</td>
+        <td>95%</td>
+        <td>90%</td>
+        <td class="student-average">92%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">A</span>
+        </td>
+      </tr>
 
+      <tr>
+        <td>Liam Smith</td>
+        <td>86%</td>
+        <td>88%</td>
+        <td>90%</td>
+        <td class="student-average">88%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">B+</span>
+        </td>
+      </tr>
 
+      <tr>
+        <td>Mia Garcia</td>
+        <td>91%</td>
+        <td>89%</td>
+        <td>90%</td>
+        <td class="student-average">90%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">A-</span>
+        </td>
+      </tr>
 
+      <tr>
+        <td>Noah Brown</td>
+        <td>82%</td>
+        <td>84%</td>
+        <td>86%</td>
+        <td class="student-average">84%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">B</span>
+        </td>
+      </tr>
 
+      <tr>
+        <td>Emma Davis</td>
+        <td>96%</td>
+        <td>94%</td>
+        <td>95%</td>
+        <td class="student-average">95%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">A</span>
+        </td>
+      </tr>
 
-    
+      <tr>
+        <td>Lucas Miller</td>
+        <td>76%</td>
+        <td>78%</td>
+        <td>80%</td>
+        <td class="student-average">78%</td>
+        <td class="student-attendance">
+          <span class="grade-badge">C+</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 </body>
 </html>
