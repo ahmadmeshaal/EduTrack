@@ -1,0 +1,1514 @@
+{
+  "courses": [
+    {
+      "id": 101,
+      "name": "Java",
+      "teacherId": 1
+    },
+    {
+      "id": 102,
+      "name": "Database",
+      "teacherId": 1
+    },
+    {
+      "id": 103,
+      "name": "Web Development",
+      "teacherId": 2
+    },
+    {
+      "id": 104,
+      "name": "JavaScript",
+      "teacherId": 2
+    },
+    {
+      "id": 105,
+      "name": "Software Testing",
+      "teacherId": 3
+    },
+    {
+      "id": 106,
+      "name": "Computer Networks",
+      "teacherId": 3
+    },
+    {
+      "id": 107,
+      "name": "Python",
+      "teacherId": 4
+    },
+    {
+      "id": 108,
+      "name": "Algorithms",
+      "teacherId": 4
+    }
+  ],
+ "teachers": [
+  {
+    "id": 1,
+    "name": "Michael Brown",
+    "username": "michael.brown",
+    "password": "Michael123"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "username": "sarah.johnson",
+    "password": "Sarah123"
+  },
+  {
+    "id": 3,
+    "name": "David Wilson",
+    "username": "david.wilson",
+    "password": "David123"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "username": "emily.davis",
+    "password": "Emily123"
+  }
+],
+
+
+  "students": [
+    {
+      "id": 1,
+      "name": "Ahmad Mohammad",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [
+            { "id": 1, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 1, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 42, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 102,
+          "assignments": [
+            { "id": 2, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 2, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 45, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 103,
+          "assignments": [
+            { "id": 3, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 3, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 41, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        },
+        {
+          "courseId": 104,
+          "assignments": [
+            { "id": 4, "name": "Assignment 1", "grade": 10, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 4, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 46, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mohammad Ali",
+      "courses": [
+        {
+          "courseId": 105,
+          "assignments": [
+            { "id": 5, "name": "Assignment 1", "grade": 6, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 5, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 38, "maxGrade": 50 },
+          "attendance": { "daysPresent": 16, "daysAbsent": 4, "totalDays": 20 }
+        },
+        {
+          "courseId": 106,
+          "assignments": [
+            { "id": 6, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 6, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 40, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 107,
+          "assignments": [
+            { "id": 7, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 7, "name": "Quiz 1", "grade": 6, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 43, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 108,
+          "assignments": [
+            { "id": 8, "name": "Assignment 1", "grade": 5, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 8, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 35, "maxGrade": 50 },
+          "attendance": { "daysPresent": 15, "daysAbsent": 5, "totalDays": 20 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Omar Khaled",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [
+            { "id": 9, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 9, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 44, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 103,
+          "assignments": [
+            { "id": 10, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 10, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 39, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 105,
+          "assignments": [
+            { "id": 11, "name": "Assignment 1", "grade": 10, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 11, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 46, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        },
+        {
+          "courseId": 107,
+          "assignments": [
+            { "id": 12, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 12, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 42, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Yousef Ahmad",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [
+            { "id": 13, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 13, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 40, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 104,
+          "assignments": [
+            { "id": 14, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 14, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 45, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 106,
+          "assignments": [
+            { "id": 15, "name": "Assignment 1", "grade": 6, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 15, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 37, "maxGrade": 50 },
+          "attendance": { "daysPresent": 16, "daysAbsent": 4, "totalDays": 20 }
+        },
+        {
+          "courseId": 108,
+          "assignments": [
+            { "id": 16, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }
+          ],
+          "quizzes": [
+            { "id": 16, "name": "Quiz 1", "grade": 6, "maxGrade": 10 }
+          ],
+          "exam": { "name": "Final Exam", "grade": 39, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "name": "Abdullah Hassan",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{ "id": 17, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 17, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 40, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 102,
+          "assignments": [{ "id": 18, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 18, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 44, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 106,
+          "assignments": [{ "id": 19, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }],
+          "quizzes": [{ "id": 19, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 43, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        },
+        {
+          "courseId": 107,
+          "assignments": [{ "id": 20, "name": "Assignment 1", "grade": 6, "maxGrade": 10 }],
+          "quizzes": [{ "id": 20, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 36, "maxGrade": 50 },
+          "attendance": { "daysPresent": 16, "daysAbsent": 4, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "name": "Hamza Mahmoud",
+      "courses": [
+        {
+          "courseId": 103,
+          "assignments": [{ "id": 21, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 21, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 45, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 104,
+          "assignments": [{ "id": 22, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 22, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 43, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 105,
+          "assignments": [{ "id": 23, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }],
+          "quizzes": [{ "id": 23, "name": "Quiz 1", "grade": 6, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 39, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        },
+        {
+          "courseId": 108,
+          "assignments": [{ "id": 24, "name": "Assignment 1", "grade": 10, "maxGrade": 10 }],
+          "quizzes": [{ "id": 24, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 47, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 7,
+      "name": "Anas Samer",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{ "id": 25, "name": "Assignment 1", "grade": 5, "maxGrade": 10 }],
+          "quizzes": [{ "id": 25, "name": "Quiz 1", "grade": 6, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 32, "maxGrade": 50 },
+          "attendance": { "daysPresent": 15, "daysAbsent": 5, "totalDays": 20 }
+        },
+        {
+          "courseId": 104,
+          "assignments": [{ "id": 26, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 26, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 38, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        },
+        {
+          "courseId": 105,
+          "assignments": [{ "id": 27, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 27, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 42, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 106,
+          "assignments": [{ "id": 28, "name": "Assignment 1", "grade": 6, "maxGrade": 10 }],
+          "quizzes": [{ "id": 28, "name": "Quiz 1", "grade": 5, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 30, "maxGrade": 50 },
+          "attendance": { "daysPresent": 14, "daysAbsent": 6, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 8,
+      "name": "Yazan Adel",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{ "id": 29, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 29, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 46, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        },
+        {
+          "courseId": 103,
+          "assignments": [{ "id": 30, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 30, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 41, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 107,
+          "assignments": [{ "id": 31, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }],
+          "quizzes": [{ "id": 31, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 44, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 108,
+          "assignments": [{ "id": 32, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 32, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 40, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 9,
+      "name": "Moath Ibrahim",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{ "id": 33, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }],
+          "quizzes": [{ "id": 33, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 39, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 102,
+          "assignments": [{ "id": 34, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 34, "name": "Quiz 1", "grade": 6, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 35, "maxGrade": 50 },
+          "attendance": { "daysPresent": 16, "daysAbsent": 4, "totalDays": 20 }
+        },
+        {
+          "courseId": 104,
+          "assignments": [{ "id": 35, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 35, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 43, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 106,
+          "assignments": [{ "id": 36, "name": "Assignment 1", "grade": 6, "maxGrade": 10 }],
+          "quizzes": [{ "id": 36, "name": "Quiz 1", "grade": 7, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 34, "maxGrade": 50 },
+          "attendance": { "daysPresent": 15, "daysAbsent": 5, "totalDays": 20 }
+        }
+      ]
+    },
+
+    {
+      "id": 10,
+      "name": "Saif Waleed",
+      "courses": [
+        {
+          "courseId": 103,
+          "assignments": [{ "id": 37, "name": "Assignment 1", "grade": 10, "maxGrade": 10 }],
+          "quizzes": [{ "id": 37, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 47, "maxGrade": 50 },
+          "attendance": { "daysPresent": 20, "daysAbsent": 0, "totalDays": 20 }
+        },
+        {
+          "courseId": 105,
+          "assignments": [{ "id": 38, "name": "Assignment 1", "grade": 8, "maxGrade": 10 }],
+          "quizzes": [{ "id": 38, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 42, "maxGrade": 50 },
+          "attendance": { "daysPresent": 19, "daysAbsent": 1, "totalDays": 20 }
+        },
+        {
+          "courseId": 107,
+          "assignments": [{ "id": 39, "name": "Assignment 1", "grade": 9, "maxGrade": 10 }],
+          "quizzes": [{ "id": 39, "name": "Quiz 1", "grade": 9, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 45, "maxGrade": 50 },
+          "attendance": { "daysPresent": 18, "daysAbsent": 2, "totalDays": 20 }
+        },
+        {
+          "courseId": 108,
+          "assignments": [{ "id": 40, "name": "Assignment 1", "grade": 7, "maxGrade": 10 }],
+          "quizzes": [{ "id": 40, "name": "Quiz 1", "grade": 8, "maxGrade": 10 }],
+          "exam": { "name": "Final Exam", "grade": 40, "maxGrade": 50 },
+          "attendance": { "daysPresent": 17, "daysAbsent": 3, "totalDays": 20 }
+        }
+      ]
+    },
+    {
+  "students": [
+    {
+      "id": 11,
+      "name": "Laith Tareq",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 41, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 41, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 102,
+          "assignments": [{"id": 42, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 42, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 43, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 43, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 44, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 44, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Rami Fouad",
+      "courses": [
+        {
+          "courseId": 105,
+          "assignments": [{"id": 45, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 45, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 46, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 46, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 47, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 47, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 48, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 48, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Basel Nader",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 49, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 49, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 36, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 50, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 50, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 51, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 51, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 52, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 52, "name": "Quiz 1", "grade": 6, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 38, "maxGrade": 50},
+          "attendance": {"daysPresent": 16, "daysAbsent": 4, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Kareem Mazen",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 53, "name": "Assignment 1", "grade": 4, "maxGrade": 10}],
+          "quizzes": [{"id": 53, "name": "Quiz 1", "grade": 5, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 32, "maxGrade": 50},
+          "attendance": {"daysPresent": 15, "daysAbsent": 5, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 54, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 54, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 55, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 55, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 56, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 56, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Tareq Sameer",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 57, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 57, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 58, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 58, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 59, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 59, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 60, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 60, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 37, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Samer Nabil",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 61, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 61, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 62, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 62, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 63, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 63, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 64, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 64, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Fares Raed",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 65, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 65, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 66, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 66, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 67, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 67, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 68, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 68, "name": "Quiz 1", "grade": 6, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 36, "maxGrade": 50},
+          "attendance": {"daysPresent": 16, "daysAbsent": 4, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ramez Eyad",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 69, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 69, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 70, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 70, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 71, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 71, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 72, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 72, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 38, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Mazen Ammar",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 73, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 73, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 74, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 74, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 75, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 75, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 76, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 76, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 48, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Waleed Osama",
+      "courses": [
+        {
+          "courseId": 103,
+          "assignments": [{"id": 77, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 77, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 78, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 78, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 79, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 79, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 80, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 80, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 35, "maxGrade": 50},
+          "attendance": {"daysPresent": 16, "daysAbsent": 4, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Noor Alhuda",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 81, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 81, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 102,
+          "assignments": [{"id": 82, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 82, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 83, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 83, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 84, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 84, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Sara Ahmad",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 85, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 85, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 86, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 86, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 87, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 87, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 88, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 88, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Lina Mohammad",
+      "courses": [
+        {
+          "courseId": 104,
+          "assignments": [{"id": 89, "name": "Assignment 1", "grade": 4, "maxGrade": 10}],
+          "quizzes": [{"id": 89, "name": "Quiz 1", "grade": 4, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 35, "maxGrade": 50},
+          "attendance": {"daysPresent": 14, "daysAbsent": 6, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 90, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 90, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 91, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 91, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 92, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 92, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Reem Khaled",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 93, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 93, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 94, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 94, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 95, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 95, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 96, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 96, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 37, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Rana Yousef",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 97, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 97, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 98, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 98, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 99, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 99, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 100, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 100, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 48, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Jana Mahmoud",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 101, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 101, "name": "Quiz 1", "grade": 6, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 37, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 102, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 102, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 103, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 103, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 104, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 104, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Aya Hassan",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 105, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 105, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 106, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 106, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 107, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 107, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 108, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 108, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Malak Samer",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 109, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 109, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 110, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 110, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 111, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 111, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 112, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 112, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Tala Adel",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 113, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 113, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 34, "maxGrade": 50},
+          "attendance": {"daysPresent": 16, "daysAbsent": 4, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 114, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 114, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 115, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 115, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 116, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 116, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Yara Ibrahim",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 117, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 117, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 118, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 118, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 119, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 119, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 120, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 120, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Dania Waleed",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 121, "name": "Assignment 1", "grade": 4, "maxGrade": 10}],
+          "quizzes": [{"id": 121, "name": "Quiz 1", "grade": 5, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 36, "maxGrade": 50},
+          "attendance": {"daysPresent": 15, "daysAbsent": 5, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 122, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 122, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 123, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 123, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 124, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 124, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Salma Tareq",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 125, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 125, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 126, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 126, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 127, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 127, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 128, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 128, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Shahd Fouad",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 129, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 129, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 130, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 130, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 131, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 131, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 132, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 132, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 38, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Joud Nader",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 133, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 133, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 134, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 134, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 135, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 135, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 136, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 136, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Roaa Mazen",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 137, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 137, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 138, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 138, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 139, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 139, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 140, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 140, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 37, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Farah Sameer",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 141, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 141, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 48, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 142, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 142, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 143, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 143, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 144, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 144, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Mais Raed",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 145, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 145, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 39, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 146, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 146, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 147, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 147, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 148, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 148, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 36, "maxGrade": 50},
+          "attendance": {"daysPresent": 16, "daysAbsent": 4, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Hiba Ammar",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 149, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 149, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 150, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 150, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 45, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 151, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 151, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 40, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 106,
+          "assignments": [{"id": 152, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 152, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Dana Eyad",
+      "courses": [
+        {
+          "courseId": 102,
+          "assignments": [{"id": 153, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 153, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        },
+        {
+          "courseId": 104,
+          "assignments": [{"id": 154, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 154, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 44, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 155, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 155, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 43, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 108,
+          "assignments": [{"id": 156, "name": "Assignment 1", "grade": 6, "maxGrade": 10}],
+          "quizzes": [{"id": 156, "name": "Quiz 1", "grade": 7, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 35, "maxGrade": 50},
+          "attendance": {"daysPresent": 17, "daysAbsent": 3, "totalDays": 20}
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Lana Osama",
+      "courses": [
+        {
+          "courseId": 101,
+          "assignments": [{"id": 157, "name": "Assignment 1", "grade": 9, "maxGrade": 10}],
+          "quizzes": [{"id": 157, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 47, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 103,
+          "assignments": [{"id": 158, "name": "Assignment 1", "grade": 8, "maxGrade": 10}],
+          "quizzes": [{"id": 158, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 42, "maxGrade": 50},
+          "attendance": {"daysPresent": 19, "daysAbsent": 1, "totalDays": 20}
+        },
+        {
+          "courseId": 105,
+          "assignments": [{"id": 159, "name": "Assignment 1", "grade": 10, "maxGrade": 10}],
+          "quizzes": [{"id": 159, "name": "Quiz 1", "grade": 9, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 46, "maxGrade": 50},
+          "attendance": {"daysPresent": 20, "daysAbsent": 0, "totalDays": 20}
+        },
+        {
+          "courseId": 107,
+          "assignments": [{"id": 160, "name": "Assignment 1", "grade": 7, "maxGrade": 10}],
+          "quizzes": [{"id": 160, "name": "Quiz 1", "grade": 8, "maxGrade": 10}],
+          "exam": {"name": "Final Exam", "grade": 41, "maxGrade": 50},
+          "attendance": {"daysPresent": 18, "daysAbsent": 2, "totalDays": 20}
+        }
+      ]
+    }
+  ]
+}
+
+  ]
+
+}
+
+
+
+
