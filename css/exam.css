@@ -1,0 +1,101 @@
+.exam-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.card {
+    width: 95%;
+    margin:0px auto 10px auto  ;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card > div:last-child {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.exam-btn{
+    width: 95%;
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-exam-btn {
+  height: 44px;
+
+  padding: 0 18px;
+
+  background-color: #087f78;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.exam-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.upcoming-tag {
+    background-color: #e0f2f1;
+    color: #087f78;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 6px 12px;
+
+    font-size: 13px;
+}
+
+.edit-tag {
+    background-color: #eef2ff;
+    color: #4f46e5;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 6px 12px;
+
+    font-size: 13px;
+}
+
+.delete-tag {
+    background-color: #fee2e2;
+    color: #dc2626;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 6px 12px;
+
+    font-size: 13px;
+}
+
+.title{
+    font-size: large;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail {
+    display: flex;
+    gap: 20px;
+}
+
