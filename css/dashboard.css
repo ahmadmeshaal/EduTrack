@@ -20,8 +20,6 @@
   grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 
-
-
 .row-1 .item,
 .row-2 .item,
 .row-3 .item {
@@ -42,6 +40,3 @@
 .row-2 .item {
   height: 200px;
 }
-
-
-

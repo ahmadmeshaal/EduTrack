@@ -4,44 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/dashboard.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="row-1">
         <div class="item">
           Total Students <br />
-          <span></span>
+          <span id="total-student"> </span>
         </div>
 
         <div class="item">
           Average grade <br />
-          <span></span>
+          <span id="average-grade"> </span>
         </div>
 
         <div class="item">
           Attendence rate <br />
-          <span></span>
+          <span id="attendance-rate"> </span>
         </div>
 
         <div class="item">
           Absences today <br />
-          <span></span>
+          <span id="absences-today"> </span>
         </div>
       </div>
 
       <div class="row-2">
         <div class="item">
           Average grades
-          <span></span>
+          <span>
+            <canvas id="c-average-grades"></canvas>
+          </span>
         </div>
         <div class="item">
           Attendance
-          <span></span>
+          <span>
+            <canvas id="c-attendance"></canvas>
+          </span>
         </div>
         <div class="item">
           Absences
-          <span></span>
+          <span>
+            <canvas id="c-absences"></canvas>
+          </span>
         </div>
       </div>
     </div>
