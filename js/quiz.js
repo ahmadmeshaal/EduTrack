@@ -1,4 +1,17 @@
 const list = document.getElementById("addCards");
+
+
+const coursesList = [
+  { id: "101", name: "Java" },
+  { id: "102", name: "Database" },
+  { id: "103", name: "Web Development" },
+  { id: "104", name: "JavaScript" },
+  { id: "105", name: "Software Testing" },
+  { id: "106", name: "Computer Networks" },
+  { id: "107", name: "Python" },
+  { id: "108", name: "Algorithms" }
+];
+
 function addQuiz(courseId, quizName, maxGrade) {
   fetch("http://localhost:3000/students")
     .then((response) => response.json())
@@ -44,60 +57,139 @@ function loadFromDB() {
     .then((students) => {
       render(students);
     });
+
+    
 }
+
 function render(students) {
   list.innerHTML = "";
 
+  const uniqueCourses = new Map();
+
   students.forEach((student) => {
+
     student.courses.forEach((course) => {
-      course.quizzes.forEach((quiz) => {
-        const div = document.createElement("div");
 
-        div.className = "exam-cards";
+      if (!uniqueCourses.has(course.courseId)) {
+        uniqueCourses.set(course.courseId, course);
+      }
 
-        div.innerHTML = `
-          <div class="card">
+    });
 
-            <i class="fa-regular fa-file"></i>
+  });
 
-            <div class="info">
+  uniqueCourses.forEach((course) => {
 
-              <span class="title">
-                ${quiz.name}
-              </span>
+    const courseInfo = coursesList.find(
+      (item) => item.id === String(course.courseId)
+    );
 
-              <span class="detail">
-                <span>Max Grade: ${quiz.maxGrade}</span>
-                <span>Grade: ${quiz.grade ?? "Not graded"}</span>
-              </span>
+    course.quizzes.forEach((quiz) => {
 
-            </div>
+      const div = document.createElement("div");
 
-            <div class="exam-actions">
+      div.className = "exam-cards";
 
-              <button class="upcoming-tag">
-                Upcoming
-              </button>
+      div.innerHTML = `
+        <div class="card">
 
-              <button class="edit-tag">
-                Edit
-              </button>
+          <i class="fa-regular fa-file"></i>
 
-              <button class="delete-tag">
-                Delete
-              </button>
+          <div class="info">
 
-            </div>
+            <span class="title">
+              ${quiz.name}
+            </span>
+
+            <span class="detail">
+              <span>Course: ${courseInfo.name}</span>
+              <span>Max Grade: ${quiz.maxGrade}</span>
+              <span>Grade: ${quiz.grade ?? "Not graded"}</span>
+            </span>
 
           </div>
-        `;
 
-        list.appendChild(div);
-      });
+          <div class="exam-actions">
+            <button class="upcoming-tag">Upcoming</button>
+            <button class="edit-tag">Edit</button>
+            <button class="delete-tag">Delete</button>
+          </div>
+
+        </div>
+      `;
+
+      list.appendChild(div);
     });
   });
 }
 
-document.getElementById("addQuizBtn").addEventListener("click", function () {
-  addQuiz(101, "Quiz 4", 10);
+// document.getElementById("addQuizBtn").addEventListener("click", function () {
+//   addQuiz(101, "Quiz 3", 10);
+// });
+
+
+
+//for popup card
+const addQuizBtn = document.getElementById("addQuizBtn");
+const quizPopup = document.getElementById("quizPopup");
+
+addQuizBtn.addEventListener("click", function () {
+
+  quizPopup.classList.add("active");
+  quizPopup.innerHTML = "";
+
+  const card = document.createElement("div");
+
+  card.className = "quiz-popup-card";
+
+  card.innerHTML = `
+    <h2>Add Quiz</h2>
+
+    <div class="form-group">
+      <label>Quiz Name</label>
+      <input type="text" id="quizName">
+    </div>
+
+    <div class="form-group">
+      <label>Course</label>
+      <select id="quizCourse">
+        <option value="">Select Course</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Max Grade</label>
+      <input type="number" id="maxGrade">
+    </div>
+
+    <div class="form-actions">
+      <button type="button" id="cancelQuiz" class="btn btn-cancel">
+        Cancel
+      </button>
+
+      <button type="button" id="saveQuiz" class="btn btn-save">
+        Save
+      </button>
+    </div>
+  `;
+
+  quizPopup.appendChild(card);
+
+
+  
+  const quizCourse = document.getElementById("quizCourse");
+
+  coursesList.forEach(function (course) {
+
+    const option = document.createElement("option");
+
+    option.value = course.id;
+    option.textContent = course.name;
+
+    quizCourse.appendChild(option);
+
+  });
+
 });
+
+loadFromDB();

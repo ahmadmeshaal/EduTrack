@@ -1,0 +1,156 @@
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+
+/* Popup Card */
+.quiz-popup-card {
+    width: 500px;
+    max-width: 90%;
+
+    background-color: whitesmoke;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    display: block;
+
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.5),
+        0 10px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Title */
+.quiz-popup-card h2 {
+    color: #0d9488;
+
+    font-size: 1.35rem;
+
+    margin-bottom: 24px;
+}
+
+
+/* Form Group */
+.quiz-popup-card .form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+.quiz-popup-card .form-group label {
+    color: #0d9488;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+
+/* Inputs */
+.quiz-popup-card .form-group input,
+.quiz-popup-card .form-group select {
+    width: 100%;
+    height: 48px;
+
+    background-color: whitesmoke;
+
+    border: 1px solid #2a364a;
+
+    border-radius: 10px;
+
+    padding: 0 16px;
+
+    color: black;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+
+/* Focus */
+.quiz-popup-card .form-group input:focus,
+.quiz-popup-card .form-group select:focus {
+    border-color: #0d9488;
+
+    box-shadow:
+        0 0 0 2px rgba(13, 148, 136, 0.15);
+}
+
+
+/* Buttons */
+.quiz-popup-card .form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+/* Button */
+.quiz-popup-card .btn {
+    height: 44px;
+
+    padding: 0 24px;
+
+    border-radius: 10px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+
+/* Cancel */
+.quiz-popup-card .btn-cancel {
+    background-color: #243044;
+
+    color: white;
+}
+
+.quiz-popup-card .btn-cancel:hover {
+    background-color: #1b2535;
+}
+
+
+/* Save */
+.quiz-popup-card .btn-save {
+    background-color: #0d9488;
+
+    color: white;
+}
+
+.quiz-popup-card .btn-save:hover {
+    background-color: #087f73;
+}
