@@ -12,8 +12,13 @@
       <h2>Welcome back</h2>
       <h5>Log in to your teacher acount</h5>
 
-      <label for="email">email </label>
-      <input type="email" id="email" required placeholder="email" /><br /><br />
+      <label for="userName">User Name </label>
+      <input
+        type="text"
+        id="userName"
+        required
+        placeholder="userName"
+      /><br /><br />
       <label for="password">password </label>
       <input
         type="password"
@@ -21,10 +26,11 @@
         id="password"
         placeholder="password"
       /><br /><br />
-      <input type="submit" class="login-btn" value="Log in" />
+      <button class="login-btn" id="submit">Log in</button>
       <p>Forgot your password?</p>
       <p>New here *_^</p>
       <a href="#">Create an account</a>
     </div>
+    <script type="module" src="../js/login.js"></script>
   </body>
 </html>

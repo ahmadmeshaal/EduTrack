@@ -34,7 +34,7 @@ body {
   margin-top: 15px;
 }
 
-.login-card input[type="email"],
+.login-card input[type="text"],
 .login-card input[type="password"] {
   width: 100%;
   padding: 10px;
