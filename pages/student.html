@@ -12,7 +12,12 @@
         <span>⌕</span>
         <input type="text" placeholder="Search students by name or ID..." />
       </div>
-      <button class="archive-btn">Fillter</button>
+       <select class="archive-btn">
+      <option value="">Filter</option>
+      <option value="os">OS</option>
+      <option value="database">Database</option>
+      <option value="cpp">C++</option>
+    </select>
 
       <button class="add-btn">+ Add new</button>
     </header>
@@ -28,41 +33,7 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td class="student-info">
-              <span class="avatar">A</span>
-              <span class="name">Ava Johnson</span>
-            </td>
-            <td class="student-id">ST-001</td>
-            <td class="student-grade"><strong>A</strong> · 92%</td>
-            <td class="student-attendance">96%</td>
-            <td>
-              <div class="actions">
-                <button class="btn-edit">Edit</button>
-                <button class="btn-archive">Archive</button>
-                <button class="btn-delete">Delete</button>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="student-info">
-              <span class="avatar">A</span>
-              <span class="name">Liam Smith</span>
-            </td>
-            <td class="student-id">ST-002</td>
-            <td class="student-grade"><strong>B</strong> · 88%</td>
-            <td class="student-attendance">87%</td>
-            <td>
-              <div class="actions">
-                <button class="btn-edit">Edit</button>
-                <button class="btn-archive">Archive</button>
-                <button class="btn-delete">Delete</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
+        <tbody id="studentsBody"></tbody>
       </table>
     </div>
   </body>
