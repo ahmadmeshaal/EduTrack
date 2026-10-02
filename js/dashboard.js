@@ -82,20 +82,19 @@ fetch("/json/db.json")
       document.getElementById("attendance-rate").innerHTML = "0%";
     }
 
-    document.getElementById("absences-today").innerHTML = totalAbsent;
+    // document.getElementById("absences-today").innerHTML = totalAbsent;
 
     // Row 2
-
-    const ctx = document.getElementById("c-average-grades");
+    const ctx = document.getElementById("c-attendance");
 
     new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["Course Avg"],
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [
           {
-            label: examDeadLine,
-            data: [examCount > 0 ? (totalGradeExams / examCount) : 0],
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
             borderWidth: 1,
           },
         ],
@@ -104,7 +103,6 @@ fetch("/json/db.json")
         scales: {
           y: {
             beginAtZero: true,
-            max: 50
           },
         },
       },
