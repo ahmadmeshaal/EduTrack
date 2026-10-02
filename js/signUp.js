@@ -1,6 +1,6 @@
 import { signupValidation } from "./signupValidation.js";
 
-const db = "http://localhost:3001/teachers";
+const db = "http://localhost:3000/teachers";
 
 const submitBtn = document.querySelector(".signbtn");
 

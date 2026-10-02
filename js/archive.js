@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/students";
+const API_URL = "http://localhost:3000/students";
 const tbody = document.getElementById("archive-body");
 console.log("archive.js loaded");
 

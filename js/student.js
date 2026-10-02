@@ -1,305 +1,240 @@
-// const BASE_URL = "http://localhost:3000";
+const API = "http://localhost:3000/students";
+const COURSES_API = "http://localhost:3000/courses";
 
-// let students = [];
-// let courses = [];
-
-// const endpoints = {
-//   teachers: `${BASE_URL}/teachers`,
-//   courses: `${BASE_URL}/courses`,
-//   students: `${BASE_URL}/students`,
-//   studentCourses: `${BASE_URL}/studentCourses`,
-//   assignments: `${BASE_URL}/assignments`,
-//   quizzes: `${BASE_URL}/quizzes`,
-//   exams: `${BASE_URL}/exams`,
-//   attendance: `${BASE_URL}/attendance`,
-// };//هاي الاندبوينتس يا شباب 
-
-
-
-// async function load() {
-//   [students, courses] = await Promise.all([api("students"), api("courses")]);
-//   fillCourseFilter();
-//   render();
-// }
-
-// //students crud
-
-// //get
-// function getStudents() {
-//   fetch(endpoints.students)
-//     .then(res => res.json())
-//     .then(data => console.log(data));
-// }
-
-// //post
-// function addStudent() {
-//   fetch(endpoints.students, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({
-//       name: "Omar Altoom"
-//     })
-//   });
-// }
-
-// //patch
-// function updateStudent(id) {
-//   fetch(`${endpoints.students}/${id}`, {
-//     method: "PATCH",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({ name: "Omar A." })
-//   });
-// }
-
-
-// //delete
-// function deleteStudent(id) {
-//   fetch(`${endpoints.students}/${id}`, {
-//     method: "DELETE"
-//   });
-// }
-
-
-
-
-// //student courses
-
-
-// //post
-// function enrollStudent() {
-//   fetch(endpoints.studentCourses, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({
-//       studentId: 1,
-//       courseId: 101
-//     })
-//   });
-// }
-
-
-// //get
-// function getEnrollments() {
-//   fetch(`${endpoints.studentCourses}?studentId=1`)
-//     .then(res => res.json())
-//     .then(data => console.log(data));
-// }
-
-
-
-// //delete
-// function deleteEnrollment(id) {
-//   fetch(`${endpoints.studentCourses}/${id}`, {
-//     method: "DELETE"
-//   });
-// }
-
-
-
-
-
-// function render() {
-//   const q = document.getElementById("search").value.trim().toLowerCase();
-//   const courseId = document.getElementById("courseFilter").value;
-//   const showDeleted = document.getElementById("showDeleted").checked;
-
-//   const rows = students
-//     .filter((s) => showDeleted || !s.isDeleted)
-//     .filter((s) => `${s.name} ST-${String(s.id).padStart(3, "0")}`.toLowerCase().includes(q))
-//     .map((s) => ({ s, st: stats(s, courseId) }))
-//     .filter(({ st }) => !courseId || st.enrolled);
-
-//   document.getElementById("studentsBody").innerHTML = rows
-//     .map(({ s, st }) => {
-//       const actions = s.isDeleted
-//         ? `<button class="btn-edit" data-act="restore" data-id="${s.id}">Restore</button>
-//            <button class="btn-delete" data-act="delete" data-id="${s.id}">Delete forever</button>`
-//         : `<button class="btn-edit" data-act="edit" data-id="${s.id}">Edit</button>
-//            <button class="btn-archive" data-act="soft" data-id="${s.id}">Archive</button>
-//            <button class="btn-delete" data-act="delete" data-id="${s.id}">Delete</button>`;
-
-//       return `
-//       <tr style="${s.isDeleted ? "opacity:.5" : ""}">
-//         <td class="student-info">
-//           <span class="avatar">${s.name[0]}</span>
-//           <span class="name">${s.name}</span>
-//         </td>
-//         <td class="student-id">ST-${String(s.id).padStart(3, "0")}</td>
-//         <td class="student-grade">${st.grade === null ? "—" : `<strong>${letter(st.grade)}</strong> · ${st.grade}%`}</td>
-//         <td class="student-attendance">${st.attendance === null ? "—" : st.attendance + "%"}</td>
-//         <td><div class="actions">${actions}</div></td>
-//       </tr>`;
-//     })
-//     .join("");
-// }
-
-
-
-// document.getElementById("search").addEventListener("input", render);
-// document.getElementById("courseFilter").addEventListener("change", render);
-// document.getElementById("showDeleted").addEventListener("change", render);
-// document.getElementById("addBtn").addEventListener("click", addStudent);
-
-
-
-
-const BASE_URL = "http://localhost:3000";
 let students = [];
 let courses = [];
+let selectedCourse = "all";
+let searchText = "";
 
-const api = (path, method = "GET", body) =>
-  fetch(`${BASE_URL}/${path}`, {
-    method,
-    headers: { "Content-Type": "application/json" },
-    body: body ? JSON.stringify(body) : undefined,
-  }).then((r) => r.json());
+const tableBody = document.getElementById("tableBody");
+const searchInput = document.getElementById("search");
+const courseFilter = document.getElementById("courseFilter");
+const addBtn = document.getElementById("addBtn");
+const modal = document.getElementById("modal");
+const form = document.getElementById("form");
+const modalTitle = document.getElementById("modalTitle");
+const studentId = document.getElementById("studentId");
+const studentName = document.getElementById("studentName");
+const cancelBtn = document.getElementById("cancelBtn");
 
-async function load() {
-  [students, courses] = await Promise.all([api("students"), api("courses")]);
-  fillCourseFilter();
+function newStudent(name) {
+  return {
+    name: name,
+    isDeleted: false,
+    courses: [
+      {
+        courseId: 0,
+        assignments: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
+        quizzes: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
+        exam: { name: "", grade: 0, maxGrade: 0, deadline: "" },
+        attendance: {
+          daysPresent: 0,
+          daysAbsent: 0,
+          totalDays: 0,
+          presentDates: [],
+          absentDates: [],
+        },
+      },
+    ],
+  };
+}
+
+async function loadStudents() {
+  const res = await fetch(API);
+  students = await res.json();
   render();
 }
 
-function fillCourseFilter() {
-  const sel = document.getElementById("courseFilter");
-  sel.innerHTML =
-    '<option value="">All courses</option>' +
-    courses.map((c) => `<option value="${c.id}">${c.name}</option>`).join("");
+async function loadCourses() {
+  const res = await fetch(COURSES_API);
+  courses = await res.json();
+
+  courses.forEach((c) => {
+    const option = document.createElement("option");
+    option.value = c.id;
+    option.textContent = c.name;
+    courseFilter.appendChild(option);
+  });
 }
 
-/* ---------- calculations ---------- */
-
-function letter(p) {
-  return p >= 90 ? "A" : p >= 80 ? "B" : p >= 70 ? "C" : p >= 60 ? "D" : "F";
+function formatId(id) {
+  return /^\d+$/.test(id) ? "ST-" + id.padStart(3, "0") : id;
 }
 
-function stats(student, courseId) {
-  const list = student.courses.filter((c) => !courseId || c.courseId == courseId);
+function getLetter(percent) {
+  if (percent >= 90) return "A";
+  if (percent >= 80) return "B";
+  if (percent >= 70) return "C";
+  if (percent >= 60) return "D";
+  return "F";
+}
 
-  let got = 0, max = 0, present = 0, total = 0;
-  list.forEach((c) => {
-    const items = [...(c.assignments || []), ...(c.quizzes || []), ...(c.exam ? [c.exam] : [])];
-    items.forEach((i) => {
-      if (i.grade === null || i.grade === undefined) return; // ungraded quiz
-      got += i.grade;
-      max += i.maxGrade;
+function calculate(student) {
+  let got = 0,
+    max = 0,
+    present = 0,
+    total = 0;
+
+  (student.courses || []).forEach((course) => {
+    if (
+      selectedCourse !== "all" &&
+      String(course.courseId) !== selectedCourse
+    ) {
+      return;
+    }
+
+    const items = [...(course.assignments || []), ...(course.quizzes || [])];
+    if (course.exam) items.push(course.exam);
+
+    items.forEach((item) => {
+      if (item.grade !== null && item.grade !== undefined) {
+        got += item.grade;
+        max += item.maxGrade;
+      }
     });
-    if (c.attendance) {
-      present += c.attendance.daysPresent;
-      total += c.attendance.totalDays;
+
+    if (course.attendance) {
+      present += course.attendance.daysPresent;
+      total += course.attendance.totalDays;
     }
   });
 
   return {
-    enrolled: list.length > 0,
     grade: max ? Math.round((got / max) * 100) : null,
     attendance: total ? Math.round((present / total) * 100) : null,
   };
 }
 
-/* ---------- render ---------- */
-
 function render() {
-  const q = document.getElementById("search").value.trim().toLowerCase();
-  const courseId = document.getElementById("courseFilter").value;
-  const showDeleted = document.getElementById("showDeleted").checked;
+  const list = students.filter((s) => {
+    // hide archived students
+    if (s.isDeleted) return false;
 
-  const rows = students
-    .filter((s) => showDeleted || !s.isDeleted)
-    .filter((s) => `${s.name} ST-${String(s.id).padStart(3, "0")}`.toLowerCase().includes(q))
-    .map((s) => ({ s, st: stats(s, courseId) }))
-    .filter(({ st }) => !courseId || st.enrolled);
+    if (selectedCourse !== "all") {
+      const inCourse = (s.courses || []).some(
+        (c) => String(c.courseId) === selectedCourse,
+      );
+      if (!inCourse) return false;
+    }
 
-  document.getElementById("studentsBody").innerHTML = rows
-    .map(({ s, st }) => {
-      const actions = s.isDeleted
-        ? `<button class="btn-edit" data-act="restore" data-id="${s.id}">Restore</button>
-           <button class="btn-delete" data-act="delete" data-id="${s.id}">Delete forever</button>`
-        : `<button class="btn-edit" data-act="edit" data-id="${s.id}">Edit</button>
-           <button class="btn-archive" data-act="soft" data-id="${s.id}">Archive</button>
-           <button class="btn-delete" data-act="delete" data-id="${s.id}">Delete</button>`;
+    const text = searchText.toLowerCase();
+    return (
+      s.name.toLowerCase().includes(text) ||
+      String(s.id).toLowerCase().includes(text) ||
+      formatId(String(s.id)).toLowerCase().includes(text)
+    );
+  });
+
+  if (list.length === 0) {
+    tableBody.innerHTML = `<tr><td colspan="5" class="empty">No students found</td></tr>`;
+    return;
+  }
+
+  tableBody.innerHTML = list
+    .map((s) => {
+      const info = calculate(s);
+      const gradeText =
+        info.grade === null
+          ? "-"
+          : `<b>${getLetter(info.grade)}</b> · ${info.grade}%`;
+      const attText = info.attendance === null ? "-" : info.attendance + "%";
 
       return `
-      <tr style="${s.isDeleted ? "opacity:.5" : ""}">
-        <td class="student-info">
-          <span class="avatar">${s.name[0]}</span>
-          <span class="name">${s.name}</span>
+      <tr>
+        <td>
+          <div class="student">
+            <div class="avatar">${s.name.charAt(0).toUpperCase()}</div>
+            <span>${s.name}</span>
+          </div>
         </td>
-        <td class="student-id">ST-${String(s.id).padStart(3, "0")}</td>
-        <td class="student-grade">${st.grade === null ? "—" : `<strong>${letter(st.grade)}</strong> · ${st.grade}%`}</td>
-        <td class="student-attendance">${st.attendance === null ? "—" : st.attendance + "%"}</td>
-        <td><div class="actions">${actions}</div></td>
-      </tr>`;
+        <td>${formatId(String(s.id))}</td>
+        <td class="grade">${gradeText}</td>
+        <td>${attText}</td>
+        <td class="right actions">
+          <button data-action="edit" data-id="${s.id}">Edit</button>
+          <button data-action="archive" data-id="${s.id}">Archive</button>
+          <button class="delete" data-action="delete" data-id="${s.id}">Delete</button>
+        </td>
+      </tr>
+    `;
     })
     .join("");
 }
 
-/* ---------- actions ---------- */
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-function emptyCourse(courseId) {
-  return {
-    courseId,
-    assignments: [],
-    quizzes: [],
-    exam: { name: "Final Exam", grade: null, maxGrade: 50, deadline: null },
-    attendance: { daysPresent: 0, daysAbsent: 0, totalDays: 0, presentDates: [], absentDates: [] },
-  };
-}
-
-async function addStudent() {
-  const name = prompt("Student name:");
+  const name = studentName.value.trim();
   if (!name) return;
-  const ids = prompt(
-    "Course IDs (comma separated)\n" + courses.map((c) => `${c.id} = ${c.name}`).join("\n"),
-    ""
-  );
-  const enrolled = (ids || "")
-    .split(",")
-    .map((x) => x.trim())
-    .filter((x) => courses.some((c) => c.id == x))
-    .map((x) => emptyCourse(Number(x)));
 
-  await api("students", "POST", { name, isDeleted: false, courses: enrolled });
-  load();
-}
+  if (studentId.value) {
+    await fetch(`${API}/${studentId.value}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name }),
+    });
+  } else {
+    await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newStudent(name)),
+    });
+  }
 
-async function editStudent(id) {
-  const s = students.find((x) => x.id == id);
-  const name = prompt("New name:", s.name);
-  if (!name) return;
-  await api(`students/${id}`, "PATCH", { name });
-  load();
-}
-
-async function softDelete(id) {
-  await api(`students/${id}`, "PATCH", { isDeleted: true });
-  load();
-}
-
-async function restore(id) {
-  await api(`students/${id}`, "PATCH", { isDeleted: false });
-  load();
-}
-
-async function hardDelete(id) {
-  if (!confirm("Delete permanently? This can't be undone.")) return;
-  await api(`students/${id}`, "DELETE");
-  load();
-}
-
-/* ---------- events ---------- */
-
-document.getElementById("studentsBody").addEventListener("click", (e) => {
-  const btn = e.target.closest("button[data-act]");
-  if (!btn) return;
-  const { act, id } = btn.dataset;
-  ({ edit: editStudent, soft: softDelete, restore, delete: hardDelete })[act](id);
+  modal.close();
+  loadStudents();
 });
 
-document.getElementById("search").addEventListener("input", render);
-document.getElementById("courseFilter").addEventListener("change", render);
-document.getElementById("showDeleted").addEventListener("change", render);
-document.getElementById("addBtn").addEventListener("click", addStudent);
+tableBody.addEventListener("click", async (e) => {
+  const btn = e.target.closest("button");
+  if (!btn) return;
 
-load();
+  const id = btn.dataset.id;
+  const action = btn.dataset.action;
 
+  if (action === "edit") {
+    const student = students.find((s) => String(s.id) === id);
+    modalTitle.textContent = "Edit student";
+    studentId.value = id;
+    studentName.value = student.name;
+    modal.showModal();
+  }
+
+  if (action === "archive") {
+    await fetch(`${API}/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ isDeleted: true }),
+    });
+    loadStudents();
+  }
+
+  if (action === "delete") {
+    if (confirm("Are you sure you want to delete this student?")) {
+      await fetch(`${API}/${id}`, { method: "DELETE" });
+      loadStudents();
+    }
+  }
+});
+
+addBtn.addEventListener("click", () => {
+  modalTitle.textContent = "Add student";
+  studentId.value = "";
+  studentName.value = "";
+  modal.showModal();
+});
+
+cancelBtn.addEventListener("click", () => modal.close());
+
+searchInput.addEventListener("input", () => {
+  searchText = searchInput.value;
+  render();
+});
+
+courseFilter.addEventListener("change", () => {
+  selectedCourse = courseFilter.value;
+  render();
+});
+
+loadCourses();
+loadStudents();
