@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 24px;
+}
+
+.table-wrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th {
+  background: #f9fafb;
+  color: #6b7280;
+  text-align: left;
+  padding: 16px 20px;
+}
+
+.student-table th:last-child,
+.student-table td:last-child {
+  text-align: right;
+}
+
+.student-table td {
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0f2ef;
+  color: #0d9488;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.name {
+  color: #111;
+  font-weight: bold;
+}
+
+.student-grade strong {
+  color: #111;
+}
+
+.btn-unarchive {
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-unarchive:hover {
+  background: #f3f4f6;
+}
+
+.empty {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+}

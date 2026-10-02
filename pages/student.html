@@ -4,66 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students</title>
-    <link rel="stylesheet" href="CSS/student.css" />
+    <link rel="stylesheet" href="../css/student.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="searchbar">
-        <span>⌕</span>
-        <input type="text" placeholder="Search students by name or ID..." />
+    <div class="container">
+      <div class="top-bar">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search students by name or ID..."
+        />
+        <select id="courseFilter" class="btn">
+          <option value="all">All courses</option>
+        </select>
+        <button id="addBtn" class="btn btn-primary">+ Add new</button>
       </div>
-      <button class="archive-btn">Fillter</button>
 
-      <button class="add-btn">+ Add new</button>
-    </header>
-
-    <div class="table-wrapper">
-      <table class="student-table">
-        <thead>
-          <tr>
-            <th>Student</th>
-            <th>ID</th>
-            <th>Grade</th>
-            <th>Attendance</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="student-info">
-              <span class="avatar">A</span>
-              <span class="name">Ava Johnson</span>
-            </td>
-            <td class="student-id">ST-001</td>
-            <td class="student-grade"><strong>A</strong> · 92%</td>
-            <td class="student-attendance">96%</td>
-            <td>
-              <div class="actions">
-                <button class="btn-edit">Edit</button>
-                <button class="btn-archive">Archive</button>
-                <button class="btn-delete">Delete</button>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="student-info">
-              <span class="avatar">A</span>
-              <span class="name">Liam Smith</span>
-            </td>
-            <td class="student-id">ST-002</td>
-            <td class="student-grade"><strong>B</strong> · 88%</td>
-            <td class="student-attendance">87%</td>
-            <td>
-              <div class="actions">
-                <button class="btn-edit">Edit</button>
-                <button class="btn-archive">Archive</button>
-                <button class="btn-delete">Delete</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>ID</th>
+              <th>Grade</th>
+              <th>Attendance</th>
+              <th class="right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
+
+    <dialog id="modal">
+      <form id="form">
+        <h3 id="modalTitle">Add student</h3>
+        <input type="hidden" id="studentId" />
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Student name"
+          required
+        />
+
+        <label class="label">Courses</label>
+        <div id="coursesBox" class="courses-box"></div>
+
+        <div class="modal-buttons">
+          <button type="button" id="cancelBtn" class="btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="../js/student.js"></script>
   </body>
 </html>

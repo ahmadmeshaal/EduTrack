@@ -27,7 +27,7 @@ export function signupValidation(
     password,
   };
 
-  fetch("http://localhost:3001/teachers", {
+  fetch("http://localhost:3000/teachers", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

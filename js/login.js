@@ -1,6 +1,6 @@
 import { validation } from "./validation.js";
 
-const db = "http://localhost:3001/teachers";
+const db = "http://localhost:3000/teachers";
 
 const submit = document.getElementById("submit");
 

@@ -65,6 +65,12 @@
       "name": "Emily Davis",
       "username": "emily.davis",
       "password": "Emily123"
+    },
+    {
+      "id": "uBWAyBuUYYw",
+      "name": "ahmad meshal",
+      "username": "aha.mesh",
+      "password": "1234"
     }
   ],
   "students": [
@@ -11238,6 +11244,51 @@
           }
         }
       ]
+    },
+    {
+      "name": "okay",
+      "isDeleted": false,
+      "courses": [],
+      "id": "ZgrP4loFRzc"
+    },
+    {
+      "name": "okay1",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": 0,
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ],
+      "id": "jBEfKLLbzlo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
