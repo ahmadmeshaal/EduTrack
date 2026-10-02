@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students</title>
-    <link rel="stylesheet" href="CSS/student.css" />
+    <link rel="stylesheet" href="../css/student.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="searchbar">
         <span>⌕</span>
-        <input type="text" placeholder="Search students by name or ID..." />
+        <input
+          type="text"
+          id="search"
+          placeholder="Search students by name or ID..."
+        />
       </div>
-       <select class="archive-btn">
-      <option value="">Filter</option>
-      <option value="os">OS</option>
-      <option value="database">Database</option>
-      <option value="cpp">C++</option>
-    </select>
+      <select class="archive-btn" id="courseFilter">
+        <option value="">Filter</option>
+        <option value="os">OS</option>
+        <option value="database">Database</option>
+        <option value="cpp">C++</option>
+      </select>
 
-      <button class="add-btn">+ Add new</button>
+      <button class="add-btn" id="addBtn">+ Add new</button>
     </header>
 
     <div class="table-wrapper">
@@ -36,5 +40,6 @@
         <tbody id="studentsBody"></tbody>
       </table>
     </div>
+    <script type="module" src="../js/student.js"></script>
   </body>
 </html>
