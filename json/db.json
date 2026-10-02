@@ -95,6 +95,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437141,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269893,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -347,6 +359,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437142,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -599,6 +623,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437142,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -851,6 +887,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437143,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -1103,6 +1151,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437143,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -1355,6 +1415,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437144,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -1607,6 +1679,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437144,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -1859,6 +1943,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437145,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269894,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -2111,6 +2207,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437145,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -2363,6 +2471,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437146,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -2615,6 +2735,18 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790939437146,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -2990,6 +3122,12 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -3242,6 +3380,12 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -3494,6 +3638,12 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790941269895,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -3746,6 +3896,12 @@
               "name": "Quiz 2",
               "grade": null,
               "maxGrade": 20
+            },
+            {
+              "id": 1790941269896,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -3991,6 +4147,18 @@
               "id": 125,
               "name": "Quiz 1",
               "grade": 9,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790939437150,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269896,
+              "name": "Quiz 3",
+              "grade": null,
               "maxGrade": 10
             }
           ],
@@ -4238,6 +4406,18 @@
               "name": "Quiz 1",
               "grade": 8,
               "maxGrade": 10
+            },
+            {
+              "id": 1790939437150,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269896,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -4483,6 +4663,18 @@
               "id": 141,
               "name": "Quiz 1",
               "grade": 9,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790939437151,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269896,
+              "name": "Quiz 3",
+              "grade": null,
               "maxGrade": 10
             }
           ],
@@ -4730,6 +4922,18 @@
               "name": "Quiz 1",
               "grade": 8,
               "maxGrade": 10
+            },
+            {
+              "id": 1790939437152,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269897,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
             }
           ],
           "exam": {
@@ -4975,6 +5179,18 @@
               "id": 157,
               "name": "Quiz 1",
               "grade": 9,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790939437153,
+              "name": "Quiz 3",
+              "grade": null,
+              "maxGrade": 10
+            },
+            {
+              "id": 1790941269897,
+              "name": "Quiz 3",
+              "grade": null,
               "maxGrade": 10
             }
           ],
