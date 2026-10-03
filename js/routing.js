@@ -14,6 +14,10 @@ function loadPage() {
     page = "grades.html";
   } else if (page === "#/archive") {
     page = "archive.html";
+  } else if (page === "#/login") {
+    page = "login.html";
+  } else if (page === "#/signUp") {
+    page = "signUp.html";
   } else {
     page = "dashboard.html";
   }
