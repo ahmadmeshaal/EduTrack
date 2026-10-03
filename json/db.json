@@ -873,7 +873,7 @@
     {
       "id": "4",
       "name": "Yousef Ahmad",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": "102",
@@ -10391,7 +10391,7 @@
       "isDeleted": false,
       "courses": [
         {
-          "courseId": 101,
+          "courseId": "101",
           "assignments": [
             {
               "id": 157,
@@ -10451,7 +10451,8 @@
             "absentDates": [
               "2026-09-09",
               "2026-09-30"
-            ]
+            ],
+            "percentage": 89
           }
         },
         {
@@ -10692,6 +10693,76 @@
         }
       ],
       "id": "jBEfKLLbzlo"
+    },
+    {
+      "name": "sobhii",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "101",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 33
+          }
+        }
+      ],
+      "id": "-PODHAI2EfA"
+    },
+    {
+      "name": "ahmad bata",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "102",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 70
+          }
+        }
+      ],
+      "id": "HJP08Nn7234"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
