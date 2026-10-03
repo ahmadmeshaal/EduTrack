@@ -243,7 +243,7 @@ function updateDashboard(selectedCourse, data) {
         {
           label: "Performance (%)",
           data: [assignmentPercent, quizPercent, examPercent],
-          backgroundColor: ["#f59e0b", "#3b82f6", "#087f78"],
+          backgroundColor: ["#087f77d3", "#087f7757", "#087f777e"],
         },
       ],
     },
