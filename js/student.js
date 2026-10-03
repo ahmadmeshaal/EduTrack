@@ -109,6 +109,15 @@ function getLetter(percent) {
   return "F";
 }
 
+function getAttendancePercent(attendance) {
+  if (!attendance) return null;
+  if (typeof attendance.percentage === "number") return attendance.percentage;
+  if (attendance.totalDays) {
+    return Math.round((attendance.daysPresent / attendance.totalDays) * 100);
+  }
+  return null;
+}
+
 function calculate(student) {
   let got = 0,
     max = 0,
@@ -136,8 +145,9 @@ function calculate(student) {
       }
     });
 
-    if (course.attendance) {
-      present += course.attendance.percentage;
+    const pct = getAttendancePercent(course.attendance);
+    if (pct !== null) {
+      present += pct;
       total += 100;
     }
   });
@@ -279,7 +289,7 @@ tableBody.addEventListener("click", async (e) => {
 
     if (course) {
       enrolledCourse.value = course.courseId;
-      attendance.value = course.attendance?.percentage ?? "";
+      attendance.value = getAttendancePercent(course.attendance) ?? "";
     }
 
     modal.showModal();
