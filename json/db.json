@@ -10391,7 +10391,7 @@
       "isDeleted": false,
       "courses": [
         {
-          "courseId": 101,
+          "courseId": "101",
           "assignments": [
             {
               "id": 157,
@@ -10451,7 +10451,8 @@
             "absentDates": [
               "2026-09-09",
               "2026-09-30"
-            ]
+            ],
+            "percentage": 89
           }
         },
         {
@@ -10692,6 +10693,41 @@
         }
       ],
       "id": "jBEfKLLbzlo"
+    },
+    {
+      "name": "sobhii",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "101",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 33
+          }
+        }
+      ],
+      "id": "-PODHAI2EfA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
