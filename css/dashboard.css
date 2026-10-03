@@ -12,15 +12,14 @@
 }
 .row-2 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 .row-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
-
-
 
 .row-1 .item,
 .row-2 .item,
@@ -41,7 +40,5 @@
 
 .row-2 .item {
   height: 200px;
+  width: 80%;
 }
-
-
-
