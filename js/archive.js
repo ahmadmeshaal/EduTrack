@@ -1,12 +1,23 @@
-const API_URL = "http://localhost:3001/students";
-const tbody = document.getElementById("archive-body");
-console.log("archive.js loaded");
+import { authGuard } from "./authGuard.js";
 
+authGuard();
+
+const user = JSON.parse(localStorage.getItem("user"));
+const welcome = document.getElementById("welcome");
+
+if (user && welcome) {
+  welcome.textContent = "Welcome " + user.username;
+}
+
+const API_URL = "http://localhost:3000/students";
+const tbody = document.getElementById("archive-body");
+
+console.log("archive.js loaded");
 
 function getStudents() {
   fetch(API_URL)
-    .then(res => res.json())
-    .then(data => console.log(data));
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 }
 
 async function loadArchived() {
@@ -58,7 +69,7 @@ function renderStudents(list) {
         <td class="student-grade"><strong>${getLetter(percent)}</strong> · ${percent}%</td>
         <td>${student.attendance ?? "-"}%</td>
         <td>
-          <button class="btn-unarchive" onclick="unarchive('${student.id}')">Unarchive</button>
+          <button class="btn-unarchive" data-id="${student.id}">Unarchive</button>
         </td>
       </tr>
     `;
@@ -75,6 +86,10 @@ async function unarchive(id) {
 
   loadArchived();
 }
+tbody.addEventListener("click", (e) => {
+  const btn = e.target.closest(".btn-unarchive");
+  if (btn) unarchive(btn.dataset.id);
+});
 
 loadArchived();
 getStudents();

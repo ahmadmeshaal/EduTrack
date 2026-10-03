@@ -65,13 +65,19 @@
       "name": "Emily Davis",
       "username": "emily.davis",
       "password": "Emily123"
+    },
+    {
+      "id": "uBWAyBuUYYw",
+      "name": "ahmad meshal",
+      "username": "aha.mesh",
+      "password": "1234"
     }
   ],
   "students": [
     {
       "id": "1",
       "name": "Ahmad Mohammad",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": 101,
@@ -337,7 +343,7 @@
     {
       "id": "2",
       "name": "Mohammad Ali",
-      "isDeleted": true,
+      "isDeleted": false,
       "courses": [
         {
           "courseId": 105,
@@ -1659,7 +1665,7 @@
     {
       "id": "7",
       "name": "Anas Samer",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": 101,
@@ -10641,444 +10647,49 @@
       ]
     },
     {
-      "name": "Omar Altoom",
-      "id": "q5-mqvIYfag"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "wTJSOIbLoGo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "HXlcrovyMmQ"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "80ACGOo0uwI"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "kz2sXcz7rtE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ABarsYu9IaM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "spWG_su5xtQ"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "nbEYJ_p9gSo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "4QOnZQ3dMYE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "rWuArYva7Xs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "LiQjIonmAi0"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "8s4s-pERrRA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "JnSzoUPA0fU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "xW5zzacLqGs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "Gd4MK1JyV_w"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "3rycgGNq6t4"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "gTzc9DgcC9k"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "eiNwAdLKfnE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "vly5hStHpQY"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "T4Uy6R5_lK8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "y3X8lGBYVPE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "FmUI2p0v1rA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "Ys2GsMoKVjM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "-rSxG08v04Q"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "RkIo1tDrbvg"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "wm98Eg6JMn4"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "hzI3OLNbVrg"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "pbKcQAfqUd0"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "MauV1-iSido"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "fV9MR7onVno"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "UeaNtL9Hmf8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "cW3rzijlu5A"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "p6OONVeNALE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ZuaIBXHz7cs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ahpFYR69W8U"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "31jkjGUULlw"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "_NLgAODvxVc"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "p_5a58aJcCM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "j78PFDpVUnM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "KPMxnHnRv0g"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "xp67nNIAKrk"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "KrANErqoNqM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "0C8sxRHZjBk"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "Y81BFscRzZA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ZOeNT1Lck1M"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "1tQD0JBfqh8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "7XuJKT3o0-c"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "aXa2IV-Jj8Q"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "JWbY4YHCvW8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "rCGB4Ps9mC8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "LMDFJfOjFvU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "4pHnLGDNSbI"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "b45LRcnpPJw"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "CcezcPQnKQE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "GLuUa-iDDVs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "QDVdGabofYw"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "4UoPIutFkTk"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "kJ7sjmgNxeo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "QSVYLco8elU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "9ltL2Rxs7Ns"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "BrgkVPmgtow"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "V-xzQYxHRR8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "eYyCJHr1KLc"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "KTDRSAKwKv0"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "dW5CQiYJOgA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "lArEWGoY37I"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "d4Oyb2QqAlU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "R4CXjpooUcI"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "xhOy9aPsMWQ"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "sWhCAo1iieQ"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "JaaK-FJiEZ8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ad-gJPb6u1g"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "Sc3wezPGkdc"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "hBNuBFuOsWA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "iFAVymjYmrs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "5iJ_GPeGex4"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "XTQaSB5MzpE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ArRg2GM8tZo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "LNHAd4t1zTw"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "LBDa9-JvUQs"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "xOXA2aJ5fpg"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "TW_FxAbfiu0"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "7scD9oUAcmw"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "BuraNSMZ3Lk"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "6ug2a6qpOvE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "x38ew2XXZA8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "AIVfRRO1VnY"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "sgSNcMgZjow"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "s4EXC1SbsZI"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "O31ZdRjM2eg"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "qeYyRBBRZtQ"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "9SORK4bh5_8"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "-cd2vCbrutY"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "_uS2rf6Ll_s"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ks5Z4pyVleM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "IXHOX7G-MNM"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "8P2e_g3ySnE"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "jdP-16o9lZA"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "fKjoM37ukA0"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "RCgZKTrAZcY"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "--MyYTUuJ3I"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "RebLJP95WbU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "Yxqv77jMcXo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "w_aRePDFOBU"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "NgmViK160mo"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "eeUiTIeRa4U"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "NdwnDrlZN0U"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "ukKCzb5jnfk"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "YSlVNpYqg4s"
-    },
-    {
-      "name": "Omar Altoom",
-      "id": "TYLa8GFeQxE"
+      "name": "okay",
+      "isDeleted": true,
+      "courses": [],
+      "id": "ZgrP4loFRzc"
+    },
+    {
+      "name": "okay1",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": 0,
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ],
+      "id": "jBEfKLLbzlo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

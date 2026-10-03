@@ -25,11 +25,15 @@ function loadPage() {
 
       dynamic.querySelectorAll("script").forEach((oldScript) => {
         const newScript = document.createElement("script");
+
+        if (oldScript.type) newScript.type = oldScript.type;
+
         if (oldScript.src) {
-          newScript.src = oldScript.src;
+          newScript.src = oldScript.src + "?t=" + Date.now();
         } else {
           newScript.textContent = oldScript.textContent;
         }
+
         oldScript.replaceWith(newScript);
       });
     });

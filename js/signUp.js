@@ -1,6 +1,7 @@
+import { authGuard } from "./authGuard.js";
 import { signupValidation } from "./signupValidation.js";
-
-const db = "http://localhost:3001/teachers";
+authGuard();
+const db = "http://localhost:3000/teachers";
 
 const submitBtn = document.querySelector(".signbtn");
 

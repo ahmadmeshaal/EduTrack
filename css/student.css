@@ -1,207 +1,201 @@
-.searchbar {
-  height: 42px;
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  margin: 0;
+  background: #f6f8f8;
+  color: #1a2332;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Top bar */
+.top-bar {
   display: flex;
-  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.top-bar input {
   flex: 1;
-  gap: 8px;
-
-  padding: 0 13px;
-
-  background-color: white;
-
-  border: 1px solid #dfe5e5;
+  padding: 14px 16px;
+  border: 1px solid #e3e8e8;
   border-radius: 10px;
+  font-size: 15px;
+  background: white;
 }
 
-.search input::placeholder {
-  color: #71848a;
-}
-
-.searchbar input {
-  width: 100%;
-
-  border: none;
-  outline: none;
-
-  font-size: 14px;
-}
-
-.archive-btn {
-  color: #000;
-  height: 44px;
-
-  border: 1px solid #e7ebeb;
-
-  padding: 0 18px;
-
-  background-color: white;
-
-  border-radius: 10px;
-
-  font-size: 14px;
-  font-weight: 600;
-
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border: 1px solid #e3e8e8;
+  background: white;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-
-.table-wrapper {
-  width: calc(100% - 40px);
-  margin: 0 20px;
-  overflow-x: auto;
+.btn:hover {
+  background: #f0f4f4;
 }
 
-.student-table {
+.btn-primary {
+  background: #0f8577;
+  border-color: #0f8577;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0c6e63;
+}
+
+/* Table */
+.table-box {
+  background: white;
+  border: 1px solid #e3e8e8;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+table {
   width: 100%;
-  min-width: 780px;
-  border-collapse: separate;
-  border-spacing: 0;
-
-  table-layout: fixed;
-
-  color: #333;
-  background-color: #ffffff;
-
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-
+  border-collapse: collapse;
 }
 
-
-.student-table thead th {
-  background-color: #f9fafb;
-  color: #6b7280;
-
-  font-size: 14px;
-  font-weight: 600;
-
+th {
+  background: #f9fafb;
+  color: #6b7580;
   text-align: left;
-
-  padding: 16px 20px;
-
-  border-bottom: 1px solid #e5e7eb;
+  padding: 18px 28px;
+  font-size: 15px;
 }
 
+td {
+  padding: 18px 28px;
+  border-top: 1px solid #eef1f1;
+  color: #6b7580;
+}
 
-
-
-.student-table thead th:last-child,
-.student-table tbody td:last-child {
+.right {
   text-align: right;
-} 
-
-
-.student-table tbody tr {
-  transition: background-color 0.2s ease;
 }
 
-.student-table tbody tr:not(:last-child) td {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-
-.student-table td {
-  padding: 14px 20px;
-
-  font-size: 14px;
-
-  vertical-align: middle;
-}
-
-
-.student-info {
+/* Student name + avatar */
+.student {
   display: flex;
   align-items: center;
-
-  gap: 12px;
+  gap: 15px;
+  color: #1a2332;
+  font-weight: bold;
 }
 
-
 .avatar {
-  width: 36px;
-  height: 36px;
-
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-
-  background-color: #e6f4f1;
-  color: #0d9488;
-
+  background: #e1f2ef;
+  color: #0f8577;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-weight: 600;
-  font-size: 14px;
-
-  flex-shrink: 0;
+  font-weight: bold;
 }
 
-
-.name {
-  font-weight: 600;
-  color: #111827;
+.grade b {
+  color: #1a2332;
 }
 
-
-.student-id,
-.student-attendance {
-  color: #6b7280;
-}
-
-
-.student-grade {
-  color: #374151;
-}
-
-.student-grade strong {
-  color: #111827;
-  font-weight: 700;
-}
-
-
-.actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  gap: 8px;
-}
-
-
+/* Action buttons */
 .actions button {
-  padding: 6px 14px;
-
+  padding: 8px 14px;
+  margin-left: 6px;
+  background: white;
+  border: 1px solid #dde2e2;
   border-radius: 6px;
-
-  font-size: 13px;
-  font-weight: 500;
-
   cursor: pointer;
-
-  background-color: #ffffff;
-
-  border: 1px solid #d1d5db;
-
-  color: #374151;
-
-  transition: all 0.2s ease;
 }
 
 .actions button:hover {
-  background-color: #f9fafb;
+  background: #f0f4f4;
 }
 
-
-.actions .btn-delete {
-  color: #dc2626;
-
-  border-color: #fca5a5;
-
-  background-color: #ffffff;
+.actions .delete {
+  color: #e03131;
+  border-color: #f5b5b5;
 }
 
-.actions .btn-delete:hover {
-  background-color: #fef2f2;
+.empty {
+  text-align: center;
+  padding: 30px;
 }
 
+/* Popup */
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  width: 340px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+dialog h3 {
+  margin-top: 0;
+}
+
+dialog input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e3e8e8;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.courses-box {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e3e8e8;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.course-item:hover {
+  background: #f0f4f4;
+}
+
+.course-item input {
+  width: 16px;
+  height: 16px;
+  accent-color: #0f8577;
+}
