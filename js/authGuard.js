@@ -5,8 +5,11 @@ export function getCookie(name) {
   return null;
 }
 
-const token = getCookie("token");
+export function authGuard() {
+  const token = getCookie("token");
+  const user = JSON.parse(localStorage.getItem("user"));
 
-if (!token) {
-  window.location.href = "/login.html";
+  if (!token || !user) {
+    window.location.href = "../pages/login.html";
+  }
 }
