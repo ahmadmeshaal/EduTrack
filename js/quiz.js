@@ -232,15 +232,11 @@ function editQuiz(quizId) {
         </div>
       `;
 
-      document
-        .getElementById("cancelEditQuiz")
-        .addEventListener("click", function () {
+      document.getElementById("cancelEditQuiz").addEventListener("click", function () {
           quizPopup.classList.remove("active");
         });
 
-      document
-        .getElementById("editQuizForm")
-        .addEventListener("submit", function (event) {
+      document.getElementById("editQuizForm").addEventListener("submit", function (event) {
           event.preventDefault();
 
           let newName =
