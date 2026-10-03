@@ -61,17 +61,10 @@ function render(students) {
             <span class="title">
               ${quiz.name}
             </span>
-            <span class="detail">
-              <span>
-                Course: ${courseInfo.name}
-              </span>
-              <span>
-                Max Grade: ${quiz.maxGrade}
-              </span>
-              <span>
-                Grade: ${quiz.grade ?? "Not graded"}
-              </span>
-            </span>
+          <span class="detail">
+           <span>${courseInfo.name}</span>
+            <span>${quiz.maxGrade}</span>
+          </span>
           </div>
 
 
