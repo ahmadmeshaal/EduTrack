@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: #f6f8f8; /* Matches student.css */
+  background-color: #f6f8f8;
   font-family: Arial, sans-serif;
   color: #1a2332;
-  padding: 30px 15px; /* Adds breathing room around the dashboard */
+  padding: 30px 15px;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
   gap: 12px;
   margin-bottom: 25px;
   padding-bottom: 20px;
-  border-bottom: 2px dashed #e3e8e8; /* Visually separates header from dashboard */
+  border-bottom: 2px dashed #e3e8e8;
 }
 
 .greet {
