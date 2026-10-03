@@ -16,42 +16,47 @@ fetch("/json/db.json")
     let totalAbsent = 0;
     let totalGradeExams = 0;
     let examCount = 0;
+    let examDeadLine = 0;
 
     let dateTracker = {};
 
     let uniqueStudents = new Set();
 
     data.students.forEach(function (student) {
-      student.courses.forEach(function (studentCourse) {
-        let isMyCourse = teacherCourseIds.includes(studentCourse.courseId);
+      if (student.courses) {
+        student.courses.forEach(function (studentCourse) {
+          let isMyCourse = teacherCourseIds.includes(studentCourse.courseId);
 
-        if (isMyCourse) {
-          uniqueStudents.add(student.id);
+          if (isMyCourse) {
+            uniqueStudents.add(student.id);
 
-          if (studentCourse.exam) {
-            totalGradeExams += studentCourse.exam.grade;
-            examCount++;
-            examDeadLine = new Date(course.exam.deadline).toLocaleDateString();
+            if (studentCourse.exam) {
+              totalGradeExams += studentCourse.exam.grade;
+              examCount++;
+              examDeadLine = new Date(
+                studentCourse.exam.deadline,
+              ).toLocaleDateString();
+            }
+
+            totalPresent += studentCourse.attendance.daysPresent;
+            totalAbsent += studentCourse.attendance.daysAbsent;
+
+            studentCourse.attendance.presentDates.forEach(function (date) {
+              if (!dateTracker[date]) {
+                dateTracker[date] = { present: 0, absent: 0 };
+              }
+              dateTracker[date].present++;
+            });
+
+            studentCourse.attendance.absentDates.forEach(function (date) {
+              if (!dateTracker[date]) {
+                dateTracker[date] = { present: 0, absent: 0 };
+              }
+              dateTracker[date].absent++;
+            });
           }
-
-          totalPresent += course.attendance.daysPresent;
-          totalAbsent += course.attendance.daysAbsent;
-
-          studentCourse.attendance.presentDates.forEach(function (date) {
-            if (!dateTracker[date]) {
-              dateTracker[data] = { present: 0, absent: 0 };
-            }
-            dateTracker[data].present++;
-          });
-
-          studentCourse.attendance.absentDates.forEach(function (date) {
-            if (!dateTracker[date]) {
-              dateTracker[data] = { present: 0, absent: 0 };
-            }
-            dateTracker[data].absent++;
-          });
-        }
-      });
+        });
+      }
     });
 
     let sortedDates = Object.keys(dateTracker).sort();
@@ -65,7 +70,7 @@ fetch("/json/db.json")
     });
 
     // Row 1
-    document.getElementById("total-student").innerHTML = data.students.length;
+    document.getElementById("total-student").innerHTML = uniqueStudents.size;
 
     if (examCount > 0) {
       document.getElementById("average-grade").innerHTML = (
@@ -85,26 +90,19 @@ fetch("/json/db.json")
     // document.getElementById("absences-today").innerHTML = totalAbsent;
 
     // Row 2
-    const ctx = document.getElementById("c-attendance");
 
-    new Chart(ctx, {
+    new Chart(document.getElementById("c-average-grades"), {
       type: "bar",
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["My Courses Avg"],
         datasets: [
           {
-            label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
+            label: "Avg Grade (Deadline: " + examDeadLine + ")",
+            data: [examCount > 0 ? totalGradeExams / examCount : 0],
+            backgroundColor: "#4caf50",
           },
         ],
       },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
+      options: { scales: { y: { max: 50, beginAtZero: true } } },
     });
   });
