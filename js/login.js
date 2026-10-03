@@ -12,27 +12,34 @@ submit.addEventListener("click", async (e) => {
 
   if (!validation(userName, password)) return;
 
-  const teacherArr = await getTeachers();
+  try {
+    const teacherArr = await getTeachers();
 
-  const user = teacherArr.find(
-    (t) => t.username === userName && t.password === password,
-  );
+    const user = teacherArr.find(
+      (t) => t.username === userName && t.password === password,
+    );
 
-  if (!user) {
-    alert("Invalid username or password");
-    return;
+    if (!user) {
+      alert("Invalid username or password");
+      return;
+    }
+
+    const token = generateToken();
+
+    setCookie("token", token, 7);
+
+    localStorage.setItem("user", JSON.stringify(user));
+
+    window.location.href = "../index.html";
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong");
   }
-
-  const token = generateToken();
-
-  setCookie("token", token, 7);
-  setCookie("user", JSON.stringify(user), 7);
-
-  window.location.href = "../index.html";
 });
 
 async function getTeachers() {
   const res = await fetch(db);
+  if (!res.ok) throw new Error("Failed to fetch");
   return await res.json();
 }
 

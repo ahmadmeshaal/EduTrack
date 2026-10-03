@@ -1,3 +1,5 @@
+
+
 const list = document.getElementById("addCards");
 
 const coursesList = [

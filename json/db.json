@@ -77,7 +77,7 @@
     {
       "id": "1",
       "name": "Ahmad Mohammad",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": 101,
@@ -1652,7 +1652,7 @@
     {
       "id": "7",
       "name": "Anas Samer",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": 101,
@@ -11247,7 +11247,7 @@
     },
     {
       "name": "okay",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [],
       "id": "ZgrP4loFRzc"
     },
@@ -11292,4 +11292,8 @@
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 56a5a4ce670ed2bef2ff2eeb52d45a5deb96bba3
