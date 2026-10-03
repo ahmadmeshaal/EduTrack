@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students</title>
     <link rel="stylesheet" href="../css/student.css" />
+    <link rel="stylesheet" href="../css/NewStudent.css" />
   </head>
   <body>
     <div class="container">
@@ -38,23 +39,50 @@
       </div>
     </div>
 
-    <dialog id="modal">
+    <dialog id="modal" class="student-modal">
       <form id="form">
         <h3 id="modalTitle">Add student</h3>
+
+        <!-- Keep this hidden input because student.js uses it -->
         <input type="hidden" id="studentId" />
-        <input
-          type="text"
-          id="studentName"
-          placeholder="Student name"
-          required
-        />
 
-        <label class="label">Courses</label>
-        <div id="coursesBox" class="courses-box"></div>
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input
+            type="text"
+            id="studentName"
+            placeholder="Enter student name"
+            required
+          />
+        </div>
 
-        <div class="modal-buttons">
-          <button type="button" id="cancelBtn" class="btn">Cancel</button>
-          <button type="submit" class="btn btn-primary">Save</button>
+    
+
+
+        <div class="form-group">
+          <label for="enrolledCourse">Enrolled Course</label>
+          <select id="enrolledCourse">
+            <option value="" disabled>Select a course</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="attendance">Attendance (%)</label>
+          <input
+            type="number"
+            id="attendance"
+            placeholder="Enter attendance percentage"
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="cancelBtn" class="btn btn-cancel">
+            Cancel
+          </button>
+
+          <button type="submit" class="btn btn-save">Save</button>
         </div>
       </form>
     </dialog>
