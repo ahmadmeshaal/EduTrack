@@ -1,3 +1,13 @@
+import { authGuard } from "./authGuard.js";
+
+authGuard();
+
+const user = JSON.parse(localStorage.getItem("user"));
+const welcome = document.getElementById("welcome");
+
+if (user && welcome) {
+  welcome.textContent = "Welcome " + user.username;
+}
 const API = "http://localhost:3000/students";
 const COURSES_API = "http://localhost:3000/courses";
 
@@ -9,33 +19,33 @@ let searchText = "";
 const tableBody = document.getElementById("tableBody");
 const searchInput = document.getElementById("search");
 const courseFilter = document.getElementById("courseFilter");
+const enrolledCourse = document.getElementById("enrolledCourse");
 const addBtn = document.getElementById("addBtn");
 const modal = document.getElementById("modal");
 const form = document.getElementById("form");
 const modalTitle = document.getElementById("modalTitle");
 const studentId = document.getElementById("studentId");
 const studentName = document.getElementById("studentName");
+const attendance = document.getElementById("attendance");
 const cancelBtn = document.getElementById("cancelBtn");
 
-function newStudent(name) {
+function newStudent(name, courseIds, attendancePercent) {
   return {
     name: name,
     isDeleted: false,
-    courses: [
-      {
-        courseId: 0,
-        assignments: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
-        quizzes: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
-        exam: { name: "", grade: 0, maxGrade: 0, deadline: "" },
-        attendance: {
-          daysPresent: 0,
-          daysAbsent: 0,
-          totalDays: 0,
-          presentDates: [],
-          absentDates: [],
-        },
+    courses: courseIds.map((courseId) => ({
+      courseId: courseId,
+      assignments: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
+      quizzes: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
+      exam: { name: "", grade: 0, maxGrade: 0, deadline: "" },
+      attendance: {
+        daysPresent: attendancePercent,
+        daysAbsent: 0,
+        totalDays: attendancePercent,
+        presentDates: [],
+        absentDates: [],
       },
-    ],
+    })),
   };
 }
 
@@ -51,9 +61,16 @@ async function loadCourses() {
 
   courses.forEach((c) => {
     const option = document.createElement("option");
+
     option.value = c.id;
     option.textContent = c.name;
+
     courseFilter.appendChild(option);
+
+    const courseOption = document.createElement("option");
+    courseOption.value = c.id;
+    courseOption.textContent = c.name;
+    enrolledCourse.appendChild(courseOption);
   });
 }
 
@@ -174,10 +191,16 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify({ name }),
     });
   } else {
+    const selectedCourses = Array.from(enrolledCourse.selectedOptions).map(
+      (option) => option.value,
+    );
+
+    const newStudentData = newStudent(name, selectedCourses, 0);
+
     await fetch(API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newStudent(name)),
+      body: JSON.stringify(newStudentData),
     });
   }
 
@@ -197,6 +220,7 @@ tableBody.addEventListener("click", async (e) => {
     modalTitle.textContent = "Edit student";
     studentId.value = id;
     studentName.value = student.name;
+
     modal.showModal();
   }
 
@@ -219,8 +243,12 @@ tableBody.addEventListener("click", async (e) => {
 
 addBtn.addEventListener("click", () => {
   modalTitle.textContent = "Add student";
+
   studentId.value = "";
   studentName.value = "";
+  enrolledCourse.value = "";
+  attendance.value = "";
+
   modal.showModal();
 });
 

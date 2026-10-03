@@ -1,3 +1,5 @@
+
+
 const list = document.getElementById("addCards");
 function addQuiz(courseId, quizName, maxGrade) {
   fetch("http://localhost:3000/students")
