@@ -12,7 +12,8 @@
 }
 .row-2 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 .row-3 {
@@ -39,9 +40,5 @@
 
 .row-2 .item {
   height: 200px;
-}
-canvas {
-
-  height: 400px;
-
+  width: 80%;
 }

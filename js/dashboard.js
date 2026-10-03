@@ -98,7 +98,7 @@ function updateDashboard(selectedCourse, data) {
         Math.abs(currentDate - firstDate) / (1000 * 60 * 60 * 24),
       );
 
-      let weekLabel = "Week " + (Math.floor(differentDays / 7) + 1);
+      let weekLabel = "Week " + (Math.floor(differentDays / 3) + 1);
 
       if (!weeklyTracker[weekLabel]) {
         weeklyTracker[weekLabel] = { present: 0, absent: 0 };
@@ -163,11 +163,13 @@ function updateDashboard(selectedCourse, data) {
         {
           label: "Avg Grade",
           data: [examCount > 0 ? totalGradeExams / examCount : 0],
-          backgroundColor: "#4caf50",
+          backgroundColor: "#087f78",
         },
       ],
     },
     options: { scales: { y: { max: 50, beginAtZero: true } } },
+    responsive: true,
+    maintainAspectRatio: false,
   });
 
   chartAttendance = new Chart(document.getElementById("c-attendance"), {
@@ -178,9 +180,14 @@ function updateDashboard(selectedCourse, data) {
         {
           label: "Total Present",
           data: weeklyPresentDate,
-          backgroundColor: "#2196f3",
+          backgroundColor: "#087f78",
         },
       ],
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
     },
   });
 
@@ -192,9 +199,14 @@ function updateDashboard(selectedCourse, data) {
         {
           label: "Total Absent",
           data: weeklyAbsentDate,
-          backgroundColor: "#f44336",
+          backgroundColor: "#087f78",
         },
       ],
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
     },
   });
 }
