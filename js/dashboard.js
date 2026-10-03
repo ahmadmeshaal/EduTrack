@@ -1,3 +1,8 @@
+import { authGuard } from "./authGuard.js";
+authGuard();
+
+const user = JSON.parse(localStorage.getItem("user"));
+
 var chartGrades = null;
 var chartAttendance = null;
 var chartAbsences = null;
@@ -8,7 +13,7 @@ fetch("/json/db.json")
     return response.json();
   })
   .then(function (data) {
-    let logInTeacherId = 2; // cookie
+    let logInTeacherId = user.id; // from cookie
     let teacherCoursesIds = [];
 
     data.courses.forEach(function (course) {
@@ -65,7 +70,9 @@ function updateDashboard(selectedCourse, data) {
           uniqueStudents.add(student.id);
 
           if (studentCourse.exam) {
-            totalGradeExams += studentCourse.exam.grade;
+            nExams += studentCourse.exam.grade;
+            totalGradeExams += studentCourse.exam.maxGrade;
+
             examCount++;
             examDeadLine = new Date(
               studentCourse.exam.deadline,
@@ -89,29 +96,35 @@ function updateDashboard(selectedCourse, data) {
           if (studentCourse.assignments) {
             studentCourse.assignments.forEach(function (assignment) {
               if (assignment.grade !== null) {
-                nExams += assignment.grade;
+                nAssignments += assignment.grade;
                 totalGradeAssignment += assignment.maxGrade;
               }
             });
           }
 
-          totalPresent += studentCourse.attendance.daysPresent;
-          totalAbsent += studentCourse.attendance.daysAbsent;
+          if (studentCourse.attendance) {
+            totalPresent += studentCourse.attendance.daysPresent || 0;
+            totalAbsent += studentCourse.attendance.daysAbsent || 0;
+
+            if (studentCourse.attendance.presentDates) {
+              studentCourse.attendance.presentDates.forEach(function (date) {
+                if (!dateTracker[date]) {
+                  dateTracker[date] = { present: 0, absent: 0 };
+                }
+                dateTracker[date].present++;
+              });
+            }
+
+            if (studentCourse.attendance.absentDates) {
+              studentCourse.attendance.absentDates.forEach(function (date) {
+                if (!dateTracker[date]) {
+                  dateTracker[date] = { present: 0, absent: 0 };
+                }
+                dateTracker[date].absent++;
+              });
+            }
+          }
         }
-
-        studentCourse.attendance.presentDates.forEach(function (date) {
-          if (!dateTracker[date]) {
-            dateTracker[date] = { present: 0, absent: 0 };
-          }
-          dateTracker[date].present++;
-        });
-
-        studentCourse.attendance.absentDates.forEach(function (date) {
-          if (!dateTracker[date]) {
-            dateTracker[date] = { present: 0, absent: 0 };
-          }
-          dateTracker[date].absent++;
-        });
       });
     }
   });
@@ -220,16 +233,15 @@ function updateDashboard(selectedCourse, data) {
     },
   });
 
-  // 3. بناء مخطط تحليل الأداء كأعمدة (Bar) بدلاً من دائرة (Pie)
   chartGrades = new Chart(document.getElementById("c-average-grades"), {
     type: "bar",
     data: {
-      labels: ["Assignments", "Quizzes", "Final Exam"], // أقسام الأداء
+      labels: ["Assignments", "Quizzes", "Final Exam"],
       datasets: [
         {
           label: "Performance (%)",
-          data: [assignmentPercent, quizPercent, examPercent], // النسب التي حسبناها
-          backgroundColor: ["#f59e0b", "#3b82f6", "#087f78"], // ألوان مميزة لكل عمود
+          data: [assignmentPercent, quizPercent, examPercent],
+          backgroundColor: ["#f59e0b", "#3b82f6", "#087f78"],
         },
       ],
     },
@@ -238,13 +250,13 @@ function updateDashboard(selectedCourse, data) {
       maintainAspectRatio: false,
       scales: {
         y: {
-          max: 100, // أقصى حد للنسبة هو 100%
+          max: 100,
           beginAtZero: true,
           title: { display: true, text: "Percentage (%)" },
         },
       },
       plugins: {
-        legend: { display: false }, // إخفاء المربع اللوني العلوي لعدم الحاجة إليه
+        legend: { display: false },
       },
     },
   });
