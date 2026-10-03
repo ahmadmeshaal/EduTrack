@@ -13,6 +13,8 @@ const COURSES_API = "http://localhost:3000/courses";
 
 let students = [];
 let courses = [];
+let myCourses = [];
+let myCourseIds = [];
 let selectedCourse = "all";
 let searchText = "";
 
@@ -37,44 +39,41 @@ function newStudent(name, courseId, attendancePercent) {
       {
         courseId: courseId,
 
-        assignments: [
-          { id: 0, name: "", grade: 0, maxGrade: 0 }
-        ],
+        assignments: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
 
-        quizzes: [
-          { id: 0, name: "", grade: 0, maxGrade: 0 }
-        ],
+        quizzes: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
 
         exam: {
           name: "",
           grade: 0,
           maxGrade: 0,
-          deadline: ""
+          deadline: "",
         },
 
         attendance: {
-          percentage: attendancePercent
-        }
-      }
-    ]
+          percentage: attendancePercent,
+        },
+      },
+    ],
   };
-}
-async function loadStudents() {
-  const res = await fetch(API);
-  students = await res.json();
-  render();
 }
 
 async function loadCourses() {
   const res = await fetch(COURSES_API);
   courses = await res.json();
 
-  courses.forEach((c) => {
-    const option = document.createElement("option");
+  const currentUser = JSON.parse(localStorage.getItem("user"));
 
+  // only the courses that belong to the logged-in teacher
+  myCourses = courses.filter(
+    (c) => String(c.teacherId) === String(currentUser.id),
+  );
+  myCourseIds = myCourses.map((c) => String(c.id));
+
+  myCourses.forEach((c) => {
+    const option = document.createElement("option");
     option.value = c.id;
     option.textContent = c.name;
-
     courseFilter.appendChild(option);
 
     const courseOption = document.createElement("option");
@@ -82,6 +81,20 @@ async function loadCourses() {
     courseOption.textContent = c.name;
     enrolledCourse.appendChild(courseOption);
   });
+}
+
+async function loadStudents() {
+  const res = await fetch(API);
+  const data = await res.json();
+
+  // only students enrolled in at least one of this teacher's courses
+  students = data.filter((student) =>
+    (student.courses || []).some((c) =>
+      myCourseIds.includes(String(c.courseId)),
+    ),
+  );
+
+  render();
 }
 
 function formatId(id) {
@@ -103,6 +116,9 @@ function calculate(student) {
     total = 0;
 
   (student.courses || []).forEach((course) => {
+    // ignore courses that belong to other teachers
+    if (!myCourseIds.includes(String(course.courseId))) return;
+
     if (
       selectedCourse !== "all" &&
       String(course.courseId) !== selectedCourse
@@ -121,9 +137,9 @@ function calculate(student) {
     });
 
     if (course.attendance) {
-     present += course.attendance.percentage;
-     total += 100;
-}
+      present += course.attendance.percentage;
+      total += 100;
+    }
   });
 
   return {
@@ -194,46 +210,48 @@ form.addEventListener("submit", async (e) => {
   const name = studentName.value.trim();
   if (!name) return;
 
-if (studentId.value) {
-  const student = students.find(
-    (s) => String(s.id) === studentId.value
-  );
+  if (studentId.value) {
+    const student = students.find((s) => String(s.id) === studentId.value);
 
-  student.courses[0].courseId = enrolledCourse.value;
+    // edit the course that belongs to this teacher, not courses[0]
+    const course = student.courses.find((c) =>
+      myCourseIds.includes(String(c.courseId)),
+    );
 
-  student.courses[0].attendance.percentage =
-    Number(attendance.value) || 0;
+    course.courseId = enrolledCourse.value;
+    if (!course.attendance) course.attendance = {};
+    course.attendance.percentage = Number(attendance.value) || 0;
 
-  await fetch(`${API}/${studentId.value}`, {
-    method: "PATCH",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      name: name,
-      courses: student.courses,
-    }),
-  });
-} else {
-  const attendancePercent = Number(attendance.value) || 0;
+    await fetch(`${API}/${studentId.value}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        courses: student.courses,
+      }),
+    });
+  } else {
+    const attendancePercent = Number(attendance.value) || 0;
 
-  const newStudentData = newStudent(
-    name,
-    enrolledCourse.value,
-    attendancePercent
-  );
+    const newStudentData = newStudent(
+      name,
+      enrolledCourse.value,
+      attendancePercent,
+    );
 
-  await fetch(API, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(newStudentData),
-  });
-}
+    await fetch(API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newStudentData),
+    });
+  }
 
-modal.close();
-loadStudents();
+  modal.close();
+  loadStudents();
 });
 
 tableBody.addEventListener("click", async (e) => {
@@ -243,31 +261,29 @@ tableBody.addEventListener("click", async (e) => {
   const id = btn.dataset.id;
   const action = btn.dataset.action;
 
-if (action === "edit") {
-  const student = students.find((s) => String(s.id) === id);
+  if (action === "edit") {
+    const student = students.find((s) => String(s.id) === id);
 
-  modalTitle.textContent = "Edit student";
+    modalTitle.textContent = "Edit student";
 
-  // Keep the ID hidden so we know which student we are editing
-  studentId.value = id;
+    // Keep the ID hidden so we know which student we are editing
+    studentId.value = id;
 
-  // Show student's current name
-  studentName.value = student.name;
+    // Show student's current name
+    studentName.value = student.name;
 
-  // Show student's current course and attendance
-  if (student.courses && student.courses.length > 0) {
-    enrolledCourse.value = student.courses[0].courseId;
+    // Show the student's course (this teacher's one) and attendance
+    const course = (student.courses || []).find((c) =>
+      myCourseIds.includes(String(c.courseId)),
+    );
 
-    if (student.courses[0].attendance) {
-      attendance.value =
-        student.courses[0].attendance.percentage;
-    } else {
-      attendance.value = "";
+    if (course) {
+      enrolledCourse.value = course.courseId;
+      attendance.value = course.attendance?.percentage ?? "";
     }
-  }
 
-  modal.showModal();
-}
+    modal.showModal();
+  }
 
   if (action === "archive") {
     await fetch(`${API}/${id}`, {
@@ -309,5 +325,9 @@ courseFilter.addEventListener("change", () => {
   render();
 });
 
-loadCourses();
-loadStudents();
+async function init() {
+  await loadCourses();
+  await loadStudents();
+}
+
+init();

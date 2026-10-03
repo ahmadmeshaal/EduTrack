@@ -608,7 +608,7 @@
       "isDeleted": false,
       "courses": [
         {
-          "courseId": 101,
+          "courseId": "104",
           "assignments": [
             {
               "id": 9,
@@ -674,7 +674,8 @@
             ],
             "absentDates": [
               "2026-09-04"
-            ]
+            ],
+            "percentage": 12
           }
         },
         {
@@ -875,7 +876,7 @@
       "isDeleted": false,
       "courses": [
         {
-          "courseId": 102,
+          "courseId": "102",
           "assignments": [
             {
               "id": 13,
@@ -935,7 +936,8 @@
             ],
             "absentDates": [
               "2026-09-06"
-            ]
+            ],
+            "percentage": 10
           }
         },
         {
