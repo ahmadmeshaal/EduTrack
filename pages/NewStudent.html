@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="../css/Newstudent.css">
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="card">
+
+        <h2 class="card-title">Add Student</h2>
+
+        <form class="student-form">
+
+            <div class="form-group">
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name" name="studentName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="studentId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="enrolled-course">Enrolled Course</label>
+
+                <div class="select-group">
+                    <select id="enrolled-course" name="enrolledCourse">
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="ux-design">UI/UX Design</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="attendance">Attendance (%)</label>
+                <input type="number" id="attendance" name="attendance">
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-save">Save</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+#modal.student-modal {
+  width: 100%;
+  max-width: 440px;
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  background: whitesmoke;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.5),
+    0 10px 10px -5px rgba(0, 0, 0, 0.4);
+
+  /* Center the popup */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+#modal.student-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modal.student-modal form {
+  padding: 28px;
+}
+
+#modal.student-modal #modalTitle {
+  color: #0d9488;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+#modal.student-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#modal.student-modal .form-group label {
+  color: #0d9488;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+#modal.student-modal .form-group input,
+#modal.student-modal .form-group select {
+  width: 100%;
+  height: 48px;
+  background: white;
+  border: 1px solid #2a364a;
+  border-radius: 10px;
+  padding: 0 16px;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+}
+
+#modal.student-modal .form-group input:focus,
+#modal.student-modal .form-group select:focus {
+  border-color: #0d9488;
+}
+
+#modal.student-modal .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+#modal.student-modal .form-actions .btn {
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 10px;
+}
+
+#modal.student-modal .btn-cancel,
+#modal.student-modal .btn-save {
+  background: #0d9488;
+  color: white;
+  border: none;
+}
+
+#modal.student-modal .btn-cancel:hover,
+#modal.student-modal .btn-save:hover {
+  background: #243044;
+}
+
