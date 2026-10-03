@@ -18,6 +18,10 @@ fetch("/json/db.json")
 
     let selectTheCourse = document.getElementById("course-select");
 
+    if (selectTheCourse !== null) {
+      updateDashboard(course.id, data);
+    }
+
     teacherCoursesIds.forEach(function (course) {
       let option = document.createElement("option");
       option.value = course.id;
