@@ -215,8 +215,9 @@ addQuizBtn.addEventListener("click", function () {
 
   `;
 
-  // Add courses
+  // courses list
   let quizCourse = document.getElementById("quizCourse");
+
   coursesList.forEach(function (course) {
     let option = document.createElement("option");
 
