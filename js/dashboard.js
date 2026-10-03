@@ -1,6 +1,7 @@
 var chartGrades = null;
 var chartAttendance = null;
 var chartAbsences = null;
+var chartScatter = null;
 
 fetch("/json/db.json")
   .then(function (response) {
@@ -17,7 +18,6 @@ fetch("/json/db.json")
     });
 
     let selectTheCourse = document.getElementById("course-select");
-
 
     teacherCoursesIds.forEach(function (course) {
       let option = document.createElement("option");
@@ -48,6 +48,8 @@ function updateDashboard(selectedCourse, data) {
   let examDeadLine = 0;
   let dateTracker = {};
 
+  let scatterData = [];
+
   let uniqueStudents = new Set();
 
   data.students.forEach(function (student) {
@@ -62,6 +64,11 @@ function updateDashboard(selectedCourse, data) {
             examDeadLine = new Date(
               studentCourse.exam.deadline,
             ).toLocaleDateString();
+
+            scatterData.push({
+              x: studentCourse.attendance.daysAbsent,
+              y: studentCourse.exam.grade,
+            });
           }
 
           totalPresent += studentCourse.attendance.daysPresent;
@@ -155,6 +162,35 @@ function updateDashboard(selectedCourse, data) {
   if (chartAbsences !== null) {
     chartAbsences.destroy();
   }
+
+  if (chartScatter !== null) {
+    chartScatter.destroy();
+  }
+
+  chartScatter = new Chart(document.getElementById("c-scatter"), {
+    type: "scatter",
+    data: {
+      datasets: [
+        {
+          label: "Student",
+          data: scatterData,
+          backgroundColor: "#087f78",
+        },
+      ],
+    },
+    options: {
+      scales: {
+        x: {
+          title: { display: true, text: "Days Absent" }, 
+        },
+        y: {
+          title: { display: true, text: "Exam Grade" }, 
+          max: 50,
+          beginAtZero: true,
+        },
+      },
+    },
+  });
 
   chartGrades = new Chart(document.getElementById("c-average-grades"), {
     type: "pie",
