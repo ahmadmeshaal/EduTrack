@@ -29,26 +29,36 @@ const studentName = document.getElementById("studentName");
 const attendance = document.getElementById("attendance");
 const cancelBtn = document.getElementById("cancelBtn");
 
-function newStudent(name, courseIds, attendancePercent) {
+function newStudent(name, courseId, attendancePercent) {
   return {
     name: name,
     isDeleted: false,
-    courses: courseIds.map((courseId) => ({
-      courseId: courseId,
-      assignments: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
-      quizzes: [{ id: 0, name: "", grade: 0, maxGrade: 0 }],
-      exam: { name: "", grade: 0, maxGrade: 0, deadline: "" },
-      attendance: {
-        daysPresent: attendancePercent,
-        daysAbsent: 0,
-        totalDays: attendancePercent,
-        presentDates: [],
-        absentDates: [],
-      },
-    })),
+    courses: [
+      {
+        courseId: courseId,
+
+        assignments: [
+          { id: 0, name: "", grade: 0, maxGrade: 0 }
+        ],
+
+        quizzes: [
+          { id: 0, name: "", grade: 0, maxGrade: 0 }
+        ],
+
+        exam: {
+          name: "",
+          grade: 0,
+          maxGrade: 0,
+          deadline: ""
+        },
+
+        attendance: {
+          percentage: attendancePercent
+        }
+      }
+    ]
   };
 }
-
 async function loadStudents() {
   const res = await fetch(API);
   students = await res.json();
@@ -111,9 +121,9 @@ function calculate(student) {
     });
 
     if (course.attendance) {
-      present += course.attendance.daysPresent;
-      total += course.attendance.totalDays;
-    }
+     present += course.attendance.percentage;
+     total += 100;
+}
   });
 
   return {
@@ -184,28 +194,46 @@ form.addEventListener("submit", async (e) => {
   const name = studentName.value.trim();
   if (!name) return;
 
-  if (studentId.value) {
-    await fetch(`${API}/${studentId.value}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name }),
-    });
-  } else {
-    const selectedCourses = Array.from(enrolledCourse.selectedOptions).map(
-      (option) => option.value,
-    );
+if (studentId.value) {
+  const student = students.find(
+    (s) => String(s.id) === studentId.value
+  );
 
-    const newStudentData = newStudent(name, selectedCourses, 0);
+  student.courses[0].courseId = enrolledCourse.value;
 
-    await fetch(API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newStudentData),
-    });
-  }
+  student.courses[0].attendance.percentage =
+    Number(attendance.value) || 0;
 
-  modal.close();
-  loadStudents();
+  await fetch(`${API}/${studentId.value}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: name,
+      courses: student.courses,
+    }),
+  });
+} else {
+  const attendancePercent = Number(attendance.value) || 0;
+
+  const newStudentData = newStudent(
+    name,
+    enrolledCourse.value,
+    attendancePercent
+  );
+
+  await fetch(API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newStudentData),
+  });
+}
+
+modal.close();
+loadStudents();
 });
 
 tableBody.addEventListener("click", async (e) => {
@@ -215,14 +243,31 @@ tableBody.addEventListener("click", async (e) => {
   const id = btn.dataset.id;
   const action = btn.dataset.action;
 
-  if (action === "edit") {
-    const student = students.find((s) => String(s.id) === id);
-    modalTitle.textContent = "Edit student";
-    studentId.value = id;
-    studentName.value = student.name;
+if (action === "edit") {
+  const student = students.find((s) => String(s.id) === id);
 
-    modal.showModal();
+  modalTitle.textContent = "Edit student";
+
+  // Keep the ID hidden so we know which student we are editing
+  studentId.value = id;
+
+  // Show student's current name
+  studentName.value = student.name;
+
+  // Show student's current course and attendance
+  if (student.courses && student.courses.length > 0) {
+    enrolledCourse.value = student.courses[0].courseId;
+
+    if (student.courses[0].attendance) {
+      attendance.value =
+        student.courses[0].attendance.percentage;
+    } else {
+      attendance.value = "";
+    }
   }
+
+  modal.showModal();
+}
 
   if (action === "archive") {
     await fetch(`${API}/${id}`, {
