@@ -40,16 +40,22 @@ fetch("/json/db.json")
   });
 
 function updateDashboard(selectedCourse, data) {
-  let totalPresent = 0,
-    totalAbsent = 0;
-  let totalGradeExams = 0,
-    examCount = 0;
+  let totalPresent = 0;
+  let totalAbsent = 0;
+  let examCount = 0;
 
-  let examDeadLine = 0;
+  let totalGradeExams = 0;
+  let nExams = 0;
+
+  let totalGradeQuiz = 0;
+  let nQuizes = 0;
+
+  let totalGradeAssignment = 0;
+  let nAssignments = 0;
+
+  let examDeadLine = "";
   let dateTracker = {};
-
   let scatterData = [];
-
   let uniqueStudents = new Set();
 
   data.students.forEach(function (student) {
@@ -68,6 +74,24 @@ function updateDashboard(selectedCourse, data) {
             scatterData.push({
               x: studentCourse.attendance.daysAbsent,
               y: studentCourse.exam.grade,
+            });
+          }
+
+          if (studentCourse.quizzes) {
+            studentCourse.quizzes.forEach(function (quiz) {
+              if (quiz.grade !== null) {
+                nQuizes += quiz.grade;
+                totalGradeQuiz += quiz.maxGrade;
+              }
+            });
+          }
+
+          if (studentCourse.assignments) {
+            studentCourse.assignments.forEach(function (assignment) {
+              if (assignment.grade !== null) {
+                nExams += assignment.grade;
+                totalGradeAssignment += assignment.maxGrade;
+              }
             });
           }
 
@@ -93,6 +117,11 @@ function updateDashboard(selectedCourse, data) {
   });
   // =======================================================
   // configure dates for draw a charts
+
+  let assignmentPercent =
+    totalGradeAssignment > 0 ? (nAssignments / totalGradeAssignment) * 100 : 0;
+  let quizPercent = totalGradeQuiz > 0 ? (nQuizes / totalGradeQuiz) * 100 : 0;
+  let examPercent = totalGradeExams > 0 ? (nExams / totalGradeExams) * 100 : 0;
 
   let sortedDates = Object.keys(dateTracker).sort();
   let weeklyTracker = {};
@@ -126,8 +155,11 @@ function updateDashboard(selectedCourse, data) {
     return weeklyTracker[weekLabel].absent;
   });
 
-  let latestDay = sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
-  let absencesToday = dateTracker[latestDay] ? dateTracker[latestDay].absent : 0;
+  let latestDay =
+    sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
+  let absencesToday = dateTracker[latestDay]
+    ? dateTracker[latestDay].absent
+    : 0;
 
   // Row 1
   document.getElementById("total-student").innerHTML = uniqueStudents.size;
@@ -176,10 +208,9 @@ function updateDashboard(selectedCourse, data) {
       ],
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
-        x: {
-          title: { display: true, text: "Days Absent" },
-        },
+        x: { title: { display: true, text: "Days Absent" } },
         y: {
           title: { display: true, text: "Exam Grade" },
           max: 50,
@@ -189,21 +220,33 @@ function updateDashboard(selectedCourse, data) {
     },
   });
 
+  // 3. بناء مخطط تحليل الأداء كأعمدة (Bar) بدلاً من دائرة (Pie)
   chartGrades = new Chart(document.getElementById("c-average-grades"), {
-    type: "pie",
+    type: "bar",
     data: {
-      labels: ["Average Grade"],
+      labels: ["Assignments", "Quizzes", "Final Exam"], // أقسام الأداء
       datasets: [
         {
-          label: "Avg Grade",
-          data: [examCount > 0 ? totalGradeExams / examCount : 0],
-          backgroundColor: "#087f78",
+          label: "Performance (%)",
+          data: [assignmentPercent, quizPercent, examPercent], // النسب التي حسبناها
+          backgroundColor: ["#f59e0b", "#3b82f6", "#087f78"], // ألوان مميزة لكل عمود
         },
       ],
     },
-    options: { scales: { y: { max: 50, beginAtZero: true } } },
-    responsive: true,
-    maintainAspectRatio: false,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          max: 100, // أقصى حد للنسبة هو 100%
+          beginAtZero: true,
+          title: { display: true, text: "Percentage (%)" },
+        },
+      },
+      plugins: {
+        legend: { display: false }, // إخفاء المربع اللوني العلوي لعدم الحاجة إليه
+      },
+    },
   });
 
   chartAttendance = new Chart(document.getElementById("c-attendance"), {
@@ -218,11 +261,7 @@ function updateDashboard(selectedCourse, data) {
         },
       ],
     },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-    },
+    options: { responsive: true, maintainAspectRatio: false },
   });
 
   chartAbsences = new Chart(document.getElementById("c-absences"), {
@@ -237,10 +276,6 @@ function updateDashboard(selectedCourse, data) {
         },
       ],
     },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-    },
+    options: { responsive: true, maintainAspectRatio: false },
   });
 }
