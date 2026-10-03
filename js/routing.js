@@ -18,6 +18,10 @@ function loadPage() {
     page = "login.html";
   } else if (page === "#/signUp") {
     page = "signUp.html";
+  } else if (page === "#/login") {
+    page = "login.html";
+  } else if (page === "#/signUp") {
+    page = "signUp.html";
   } else  {
     page = "dashboard.html";
   }
