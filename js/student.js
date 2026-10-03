@@ -1,3 +1,13 @@
+import { authGuard } from "./authGuard.js";
+
+authGuard();
+
+const user = JSON.parse(localStorage.getItem("user"));
+const welcome = document.getElementById("welcome");
+
+if (user && welcome) {
+  welcome.textContent = "Welcome " + user.username;
+}
 const API = "http://localhost:3000/students";
 const COURSES_API = "http://localhost:3000/courses";
 
