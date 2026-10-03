@@ -45,6 +45,8 @@ fetch("/json/db.json")
   });
 
 function updateDashboard(selectedCourse, data) {
+  var CopyselectedCourse = selectedCourse;
+  var copyData = data;
   let totalPresent = 0;
   let totalAbsent = 0;
   let examCount = 0;
@@ -291,3 +293,5 @@ function updateDashboard(selectedCourse, data) {
     options: { responsive: true, maintainAspectRatio: false },
   });
 }
+
+updateDashboard(CopyselectedCourse, copyData);
