@@ -72,10 +72,7 @@ Visit the live project here:
 ## Getting Started
 
 ### Prerequisites
-
-- A modern web browser
-- Python 3 or another local web server
-
+- node JS 
 ### Run Locally
 
 Clone the repository and navigate to the project directory:
@@ -88,14 +85,9 @@ cd EduTrack
 Start a local web server:
 
 ```bash
-python -m http.server 8000
+npx json-server --watch db.json --port 3000
 ```
 
-Open the application in your browser:
-
-```text
-http://localhost:8000
-```
 
 ## Usage
 
@@ -121,7 +113,6 @@ Application data is stored in `json/db.json`, while login and session informatio
 - EduTrack is currently a front-end application.
 - It does not currently use a server-side backend or database server.
 - Authentication is intended for demonstration and prototype purposes.
-- A local web server is recommended because the application loads pages and assets dynamically.
 
 \
 ## Contributing
