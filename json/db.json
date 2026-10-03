@@ -166,6 +166,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 45,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 30,
             "daysAbsent": 0,
@@ -485,10 +491,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 43,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 25,
@@ -817,10 +823,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 42,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 30,
@@ -886,6 +892,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 40,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 29,
             "daysAbsent": 1,
@@ -1211,6 +1223,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 44,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 25,
             "daysAbsent": 5,
@@ -1334,10 +1352,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 36,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 27,
@@ -1935,6 +1953,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 46,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 26,
             "daysAbsent": 4,
@@ -2058,10 +2082,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 44,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 29,
@@ -2261,6 +2285,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 35,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 28,
             "daysAbsent": 2,
@@ -2581,10 +2611,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 45,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 30,
@@ -2784,6 +2814,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 41,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 28,
             "daysAbsent": 2,
@@ -3104,10 +3140,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 40,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 29,
@@ -3435,10 +3471,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 38,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 30,
@@ -3504,6 +3540,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 32,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 30,
             "daysAbsent": 0,
@@ -4027,6 +4069,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 44,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 27,
             "daysAbsent": 3,
@@ -4150,10 +4198,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 42,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 30,
@@ -4551,6 +4599,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 41,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 28,
             "daysAbsent": 2,
@@ -4737,10 +4791,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 38,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 29,
@@ -5004,10 +5058,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 48,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 26,
@@ -5406,6 +5460,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 40,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 26,
             "daysAbsent": 4,
@@ -5465,10 +5525,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 46,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 26,
@@ -5599,6 +5659,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 45,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 28,
             "daysAbsent": 2,
@@ -5984,10 +6050,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 46,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 28,
@@ -6386,6 +6452,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 44,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 29,
             "daysAbsent": 1,
@@ -6509,10 +6581,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 42,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 27,
@@ -6842,10 +6914,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 39,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 25,
@@ -6912,6 +6984,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 41,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 28,
             "daysAbsent": 2,
@@ -7437,6 +7515,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 34,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 25,
             "daysAbsent": 5,
@@ -7559,10 +7643,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 45,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 26,
@@ -7891,10 +7975,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 47,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 28,
@@ -7961,6 +8045,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 36,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 30,
             "daysAbsent": 0,
@@ -8408,10 +8498,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 39,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 26,
@@ -8478,6 +8568,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 40,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 25,
             "daysAbsent": 5,
@@ -8927,10 +9023,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 42,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 27,
@@ -8997,6 +9093,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 43,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 27,
             "daysAbsent": 3,
@@ -9517,6 +9619,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 39,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 27,
             "daysAbsent": 3,
@@ -9639,10 +9747,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 41,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 25,
@@ -10035,6 +10143,12 @@
               "maxGrade": 10
             }
           ],
+          "exam": {
+            "name": "Final Exam",
+            "grade": 42,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
+          },
           "attendance": {
             "daysPresent": 29,
             "daysAbsent": 1,
@@ -10158,10 +10272,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 43,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 28,
@@ -10485,10 +10599,10 @@
             }
           ],
           "exam": {
-            "name": "test exam",
-            "grade": null,
-            "maxGrade": 9,
-            "deadline": "2026-10-17T17:04:00.000Z"
+            "name": "Final Exam",
+            "grade": 41,
+            "maxGrade": 50,
+            "deadline": "2026-10-15T23:59:59Z"
           },
           "attendance": {
             "daysPresent": 28,
