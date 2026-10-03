@@ -118,3 +118,22 @@ body {
   width: 100%;
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .row-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+}
