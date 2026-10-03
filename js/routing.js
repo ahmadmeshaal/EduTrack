@@ -1,4 +1,8 @@
 const dynamic = document.querySelector(".Dynmic");
+const name = document.getElementById("name");
+const user = JSON.parse(localStorage.getItem("user"));
+
+name.textContent = user.name;
 
 function loadPage() {
   let page = location.hash;
@@ -18,7 +22,11 @@ function loadPage() {
     page = "login.html";
   } else if (page === "#/signUp") {
     page = "signUp.html";
-  } else  {
+  } else if (page === "#/login") {
+    page = "login.html";
+  } else if (page === "#/signUp") {
+    page = "signUp.html";
+  } else {
     page = "dashboard.html";
   }
 

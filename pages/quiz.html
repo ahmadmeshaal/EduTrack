@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduTrack</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/exam.css" />
+    <link rel="stylesheet" href="/css/popup.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -65,22 +66,17 @@
     </aside>
 
     <main class="main">
-      <header class="navbar">
-        <div class="search">
-          <span>⌕</span>
-          <input type="text" placeholder="Search..." />
-        </div>
-
-        <button class="add-btn">+ Add new</button>
-
-        <div class="user-icon">M</div>
-      </header>
+      <header class="navbar"></header>
 
       <section class="Dynmic">
         <div class="exam-btn">
           <button class="add-exam-btn" id="addQuizBtn">Add Quiz</button>
         </div>
-        <div class="exam-cards" id="addCards"></div>
+
+        <div id="addCards"></div>
+        <div id="quizPopup" class="popup-overlay">
+  
+        </div>
       </section>
     </main>
 
