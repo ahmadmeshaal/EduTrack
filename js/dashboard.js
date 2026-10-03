@@ -126,11 +126,8 @@ function updateDashboard(selectedCourse, data) {
     return weeklyTracker[weekLabel].absent;
   });
 
-  let latestDay =
-    sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
-  let absencesToday = dateTracker[latestDay]
-    ? dateTracker[latestDay].absent
-    : 0;
+  let latestDay = sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
+  let absencesToday = dateTracker[latestDay] ? dateTracker[latestDay].absent : 0;
 
   // Row 1
   document.getElementById("total-student").innerHTML = uniqueStudents.size;
@@ -181,10 +178,10 @@ function updateDashboard(selectedCourse, data) {
     options: {
       scales: {
         x: {
-          title: { display: true, text: "Days Absent" }, 
+          title: { display: true, text: "Days Absent" },
         },
         y: {
-          title: { display: true, text: "Exam Grade" }, 
+          title: { display: true, text: "Exam Grade" },
           max: 50,
           beginAtZero: true,
         },
