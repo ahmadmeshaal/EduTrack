@@ -1,156 +1,211 @@
-
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
-    display: none;
+  display: none;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .popup-overlay.active {
-    display: flex;
+  display: flex;
 }
-
 
 /* Popup Card */
 .quiz-popup-card {
-    width: 500px;
-    max-width: 90%;
+  width: 500px;
+  max-width: 90%;
 
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 
-    border-radius: 16px;
+  border-radius: 16px;
 
-    padding: 30px;
+  padding: 30px;
 
-    display: block;
+  display: block;
 
-    box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, 0.5),
-        0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.5),
+    0 10px 10px -5px rgba(0, 0, 0, 0.4);
 }
-
 
 /* Title */
 .quiz-popup-card h2 {
-    color: #0d9488;
+  color: #0d9488;
 
-    font-size: 1.35rem;
+  font-size: 1.35rem;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
-
 
 /* Form Group */
 .quiz-popup-card .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 8px;
+  gap: 8px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 /* Labels */
 .quiz-popup-card .form-group label {
-    color: #0d9488;
+  color: #0d9488;
 
-    font-size: 0.95rem;
-    font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
-
 
 /* Inputs */
 .quiz-popup-card .form-group input,
 .quiz-popup-card .form-group select {
-    width: 100%;
-    height: 48px;
+  width: 100%;
+  height: 48px;
 
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 
-    border: 1px solid #2a364a;
+  border: 1px solid #2a364a;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    padding: 0 16px;
+  padding: 0 16px;
 
-    color: black;
+  color: black;
 
-    font-size: 1rem;
+  font-size: 1rem;
 
-    outline: none;
+  outline: none;
 }
-
 
 /* Focus */
 .quiz-popup-card .form-group input:focus,
 .quiz-popup-card .form-group select:focus {
-    border-color: #0d9488;
+  border-color: #0d9488;
 
-    box-shadow:
-        0 0 0 2px rgba(13, 148, 136, 0.15);
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.15);
 }
-
 
 /* Buttons */
 .quiz-popup-card .form-actions {
-    display: flex;
+  display: flex;
 
-    justify-content: flex-end;
+  justify-content: flex-end;
 
-    gap: 12px;
+  gap: 12px;
 
-    margin-top: 25px;
+  margin-top: 25px;
 }
-
 
 /* Button */
 .quiz-popup-card .btn {
-    height: 44px;
+  height: 44px;
 
-    padding: 0 24px;
+  padding: 0 24px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    font-size: 0.95rem;
-    font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 600;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    border: none;
+  border: none;
 }
-
 
 /* Cancel */
 .quiz-popup-card .btn-cancel {
-    background-color: #243044;
+  background-color: #243044;
 
-    color: white;
+  color: white;
 }
 
 .quiz-popup-card .btn-cancel:hover {
-    background-color: #1b2535;
+  background-color: #1b2535;
 }
-
 
 /* Save */
 .quiz-popup-card .btn-save {
-    background-color: #0d9488;
+  background-color: #0d9488;
 
-    color: white;
+  color: white;
 }
 
 .quiz-popup-card .btn-save:hover {
-    background-color: #087f73;
+  background-color: #087f73;
+}
+
+/* Upload File */
+.quiz-popup-card .form-group input[type="file"] {
+  width: 100%;
+  height: 48px;
+
+  background-color: whitesmoke;
+
+  border: 1px solid #2a364a;
+  border-radius: 10px;
+
+  padding: 6px 8px;
+
+  color: #555;
+
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+/* Choose File Button */
+.quiz-popup-card .form-group input[type="file"]::file-selector-button {
+  height: 36px;
+
+  padding: 0 16px;
+
+  margin-right: 12px;
+
+  background-color: #0d9488;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.quiz-popup-card .form-group input[type="file"]::file-selector-button:hover {
+  background-color: #087f73;
+}
+
+/* Focus */
+.quiz-popup-card .form-group input[type="file"]:focus {
+  border-color: #0d9488;
+
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.15);
+
+  outline: none;
+}
+
+@media (max-width: 550px) {
+  .quiz-popup-card {
+    width: 90%;
+    padding: 20px;
+  }
+  .quiz-popup-card .form-actions {
+    flex-direction: column;
+  }
+  .quiz-popup-card .btn {
+    width: 100%;
+  }
 }

@@ -1,3 +1,8 @@
+import { authGuard } from "./authGuard.js";
+authGuard();
+
+const user = JSON.parse(localStorage.getItem("user"));
+
 var chartGrades = null;
 var chartAttendance = null;
 var chartAbsences = null;
@@ -8,7 +13,7 @@ fetch("/json/db.json")
     return response.json();
   })
   .then(function (data) {
-    let logInTeacherId = 2; // cookie
+    let logInTeacherId = user.id; // from cookie
     let teacherCoursesIds = [];
 
     data.courses.forEach(function (course) {
@@ -40,16 +45,24 @@ fetch("/json/db.json")
   });
 
 function updateDashboard(selectedCourse, data) {
-  let totalPresent = 0,
-    totalAbsent = 0;
-  let totalGradeExams = 0,
-    examCount = 0;
+  var CopyselectedCourse = selectedCourse;
+  var copyData = data;
+  let totalPresent = 0;
+  let totalAbsent = 0;
+  let examCount = 0;
 
-  let examDeadLine = 0;
+  let totalGradeExams = 0;
+  let nExams = 0;
+
+  let totalGradeQuiz = 0;
+  let nQuizes = 0;
+
+  let totalGradeAssignment = 0;
+  let nAssignments = 0;
+
+  let examDeadLine = "";
   let dateTracker = {};
-
   let scatterData = [];
-
   let uniqueStudents = new Set();
 
   data.students.forEach(function (student) {
@@ -59,7 +72,9 @@ function updateDashboard(selectedCourse, data) {
           uniqueStudents.add(student.id);
 
           if (studentCourse.exam) {
-            totalGradeExams += studentCourse.exam.grade;
+            nExams += studentCourse.exam.grade;
+            totalGradeExams += studentCourse.exam.maxGrade;
+
             examCount++;
             examDeadLine = new Date(
               studentCourse.exam.deadline,
@@ -71,28 +86,57 @@ function updateDashboard(selectedCourse, data) {
             });
           }
 
-          totalPresent += studentCourse.attendance.daysPresent;
-          totalAbsent += studentCourse.attendance.daysAbsent;
+          if (studentCourse.quizzes) {
+            studentCourse.quizzes.forEach(function (quiz) {
+              if (quiz.grade !== null) {
+                nQuizes += quiz.grade;
+                totalGradeQuiz += quiz.maxGrade;
+              }
+            });
+          }
+
+          if (studentCourse.assignments) {
+            studentCourse.assignments.forEach(function (assignment) {
+              if (assignment.grade !== null) {
+                nAssignments += assignment.grade;
+                totalGradeAssignment += assignment.maxGrade;
+              }
+            });
+          }
+
+          if (studentCourse.attendance) {
+            totalPresent += studentCourse.attendance.daysPresent || 0;
+            totalAbsent += studentCourse.attendance.daysAbsent || 0;
+
+            if (studentCourse.attendance.presentDates) {
+              studentCourse.attendance.presentDates.forEach(function (date) {
+                if (!dateTracker[date]) {
+                  dateTracker[date] = { present: 0, absent: 0 };
+                }
+                dateTracker[date].present++;
+              });
+            }
+
+            if (studentCourse.attendance.absentDates) {
+              studentCourse.attendance.absentDates.forEach(function (date) {
+                if (!dateTracker[date]) {
+                  dateTracker[date] = { present: 0, absent: 0 };
+                }
+                dateTracker[date].absent++;
+              });
+            }
+          }
         }
-
-        studentCourse.attendance.presentDates.forEach(function (date) {
-          if (!dateTracker[date]) {
-            dateTracker[date] = { present: 0, absent: 0 };
-          }
-          dateTracker[date].present++;
-        });
-
-        studentCourse.attendance.absentDates.forEach(function (date) {
-          if (!dateTracker[date]) {
-            dateTracker[date] = { present: 0, absent: 0 };
-          }
-          dateTracker[date].absent++;
-        });
       });
     }
   });
   // =======================================================
   // configure dates for draw a charts
+
+  let assignmentPercent =
+    totalGradeAssignment > 0 ? (nAssignments / totalGradeAssignment) * 100 : 0;
+  let quizPercent = totalGradeQuiz > 0 ? (nQuizes / totalGradeQuiz) * 100 : 0;
+  let examPercent = totalGradeExams > 0 ? (nExams / totalGradeExams) * 100 : 0;
 
   let sortedDates = Object.keys(dateTracker).sort();
   let weeklyTracker = {};
@@ -126,8 +170,11 @@ function updateDashboard(selectedCourse, data) {
     return weeklyTracker[weekLabel].absent;
   });
 
-  let latestDay = sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
-  let absencesToday = dateTracker[latestDay] ? dateTracker[latestDay].absent : 0;
+  let latestDay =
+    sortedDates.length > 0 ? sortedDates[sortedDates.length - 1] : "N/A";
+  let absencesToday = dateTracker[latestDay]
+    ? dateTracker[latestDay].absent
+    : 0;
 
   // Row 1
   document.getElementById("total-student").innerHTML = uniqueStudents.size;
@@ -176,10 +223,9 @@ function updateDashboard(selectedCourse, data) {
       ],
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
-        x: {
-          title: { display: true, text: "Days Absent" },
-        },
+        x: { title: { display: true, text: "Days Absent" } },
         y: {
           title: { display: true, text: "Exam Grade" },
           max: 50,
@@ -190,20 +236,31 @@ function updateDashboard(selectedCourse, data) {
   });
 
   chartGrades = new Chart(document.getElementById("c-average-grades"), {
-    type: "pie",
+    type: "bar",
     data: {
-      labels: ["Average Grade"],
+      labels: ["Assignments", "Quizzes", "Final Exam"],
       datasets: [
         {
-          label: "Avg Grade",
-          data: [examCount > 0 ? totalGradeExams / examCount : 0],
-          backgroundColor: "#087f78",
+          label: "Performance (%)",
+          data: [assignmentPercent, quizPercent, examPercent],
+          backgroundColor: ["#087f77d3", "#087f7757", "#087f777e"],
         },
       ],
     },
-    options: { scales: { y: { max: 50, beginAtZero: true } } },
-    responsive: true,
-    maintainAspectRatio: false,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          max: 100,
+          beginAtZero: true,
+          title: { display: true, text: "Percentage (%)" },
+        },
+      },
+      plugins: {
+        legend: { display: false },
+      },
+    },
   });
 
   chartAttendance = new Chart(document.getElementById("c-attendance"), {
@@ -218,11 +275,7 @@ function updateDashboard(selectedCourse, data) {
         },
       ],
     },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-    },
+    options: { responsive: true, maintainAspectRatio: false },
   });
 
   chartAbsences = new Chart(document.getElementById("c-absences"), {
@@ -237,10 +290,8 @@ function updateDashboard(selectedCourse, data) {
         },
       ],
     },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-    },
+    options: { responsive: true, maintainAspectRatio: false },
   });
 }
+
+updateDashboard(CopyselectedCourse, copyData);
