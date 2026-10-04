@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <div class="top-bar">
+        <div class="greet">Welcome back, Teacher! 👋</div>
         <select id="course-select" class="btn"></select>
       </div>
 
@@ -37,13 +38,13 @@
 
       <div class="row-2">
         <div class="item">
-          Average grades
-          <canvas id="c-average-grades"></canvas>
+          Performance Breakdown
+          <span><canvas id="c-average-grades"></canvas></span>
         </div>
 
         <div class="item">
           Absences vs. Grades
-          <canvas id="c-scatter"></canvas>
+          <span><canvas id="c-scatter"></canvas></span>
         </div>
       </div>
 
@@ -67,6 +68,6 @@
     </div>
 
     <div class="row-3"></div>
-    <script src="/js/dashboard.js" defer></script>
+    <script type="module" src="/js/dashboard.js" defer></script>
   </body>
 </html>

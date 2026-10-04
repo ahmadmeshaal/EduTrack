@@ -290,6 +290,29 @@ body {
 
   cursor: pointer;
 }
+
+
+.exam-top-bar {
+  width: 95%;
+  margin: 40px auto 25px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.exam-filter {
+  padding: 10px 18px;
+  border: 1px solid #e3e8e8;
+  background: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.exam-filter:hover {
+  background: #f0f4f4;
+}
 @media (max-width: 800px) {
   .sidebar {
     width: 210px;
@@ -308,3 +331,4 @@ body {
     width: 180px;
   }
 }
+

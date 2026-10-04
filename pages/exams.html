@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/exam.css" />
   <link rel="stylesheet" href="/css/popup.css" />
+   <link rel="stylesheet" href="../css/student.css" />
+    <link rel="stylesheet" href="../css/NewStudent.css" />
 
   <link
     rel="stylesheet"
@@ -21,13 +23,12 @@
 
     <section class="Dynmic">
 
-      <div class="exam-btn">
-
-        <button class="add-exam-btn" id="addExamBtn">
-          Add Exam
-        </button>
-
-      </div>
+              <div class="exam-top-bar">
+          <select id="examCourseFilter" class="exam-filter">
+            <option value="all">All courses</option>
+          </select>
+          <button class="add-exam-btn" id="addExamBtn">+ Add Exam</button>
+        </div>
 
       <div id="addCards"></div>
 
@@ -40,8 +41,8 @@
 <script src="https://apis.google.com/js/api.js"></script>
 <script src="https://accounts.google.com/gsi/client"></script>
 
-<script src="/js/calender.js"></script>
-<script src="/js/exam.js"></script>
+<script type="module" src="/js/calender.js"></script>
+<script type="module" src="/js/exam.js"></script>
 
 </body>
 

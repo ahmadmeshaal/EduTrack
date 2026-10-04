@@ -1,16 +1,27 @@
+import { authGuard } from "./authGuard.js";
+
+authGuard();
+const user = JSON.parse(localStorage.getItem("user"));
+
 const list = document.getElementById("addCards");
 
-const coursesList = [
-  { id: "101", name: "Java" },
-  { id: "102", name: "Database" },
-  { id: "103", name: "Web Development" },
-  { id: "104", name: "JavaScript" },
-  { id: "105", name: "Software Testing" },
-  { id: "106", name: "Computer Networks" },
-  { id: "107", name: "Python" },
-  { id: "108", name: "Algorithms" },
-];
+let coursesList = [];
 
+let selectedCourse = "all";
+
+
+
+function loadCourses() {
+  return fetch("http://localhost:3000/courses")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (courses) {
+      coursesList = courses.filter(function (course) {
+        return String(course.teacherId) === String(user.id);
+      });
+    });
+}
 //load
 function loadFromDB() {
   fetch("http://localhost:3000/students")
@@ -44,11 +55,12 @@ function render(students) {
   });
 
   courses.forEach(function (course) {
-    let courseInfo = coursesList.find(function (item) {
-      return item.id === String(course.courseId);
+       let courseInfo = coursesList.find(function (item) {
+      return String(item.id) === String(course.courseId);
     });
 
-    if (course.exam && courseInfo) {
+  
+    if (course.exam && courseInfo&&(selectedCourse === "all" || String(course.courseId) === selectedCourse)) {
       let exam = course.exam;
       let div = document.createElement("div");
 
@@ -63,8 +75,8 @@ function render(students) {
             </span>
 
             <span class="detail">
-             <span>${courseInfo.name}</span>
-             <span>${exam.maxGrade}</span>
+             <span> Course: ${courseInfo.name}</span>
+             <span>Grdrae: ${exam.maxGrade}</span>
             <span>${new Date(exam.deadline).toLocaleDateString()}</span>
             </span>
           </div>
@@ -112,7 +124,7 @@ function addExam(courseId, examName, maxGrade, deadline) {
     .then(function (students) {
       students.forEach(function (student) {
         student.courses.forEach(function (course) {
-          if (course.courseId === courseId) {
+          if (String(course.courseId) === String(courseId) ) {
             course.exam = {
               name: examName,
               grade: null,
@@ -145,7 +157,7 @@ function deleteExam(courseId) {
     .then(function (students) {
       students.forEach(function (student) {
         student.courses.forEach(function (course) {
-          if (course.courseId === Number(courseId)) {
+          if (String(course.courseId) === String(courseId))  {
             delete course.exam;
 
             fetch(`http://localhost:3000/students/${student.id}`, {
@@ -248,4 +260,24 @@ addExamBtn.addEventListener("click", function () {
     });
 });
 
-loadFromDB();
+// window.edit = editQuiz;
+
+const examCourseFilter = document.getElementById("examCourseFilter");
+
+examCourseFilter.addEventListener("change", function () {
+  selectedCourse = examCourseFilter.value;
+  loadFromDB();
+});
+
+window.deleteExam = deleteExam;
+
+loadCourses().then(function () {
+  coursesList.forEach(function (course) {
+    let option = document.createElement("option");
+    option.value = course.id;
+    option.textContent = course.name;
+    examCourseFilter.appendChild(option);
+  });
+
+  loadFromDB();
+});

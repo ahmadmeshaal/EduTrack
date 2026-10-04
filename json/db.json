@@ -85,7 +85,7 @@
             {
               "id": 1,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -93,7 +93,7 @@
             {
               "id": 1,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             },
             {
@@ -105,7 +105,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -162,13 +162,13 @@
             {
               "id": 2,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -217,7 +217,7 @@
             {
               "id": 3,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -225,13 +225,13 @@
             {
               "id": 3,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -281,7 +281,7 @@
             {
               "id": 4,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -289,13 +289,13 @@
             {
               "id": 4,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -351,7 +351,7 @@
             {
               "id": 5,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -359,13 +359,13 @@
             {
               "id": 5,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 38,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -415,7 +415,7 @@
             {
               "id": 6,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -423,13 +423,13 @@
             {
               "id": 6,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -479,7 +479,7 @@
             {
               "id": 7,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -493,7 +493,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -551,13 +551,13 @@
             {
               "id": 8,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 35,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -614,7 +614,7 @@
             {
               "id": 9,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -634,7 +634,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -684,7 +684,7 @@
             {
               "id": 10,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -692,13 +692,13 @@
             {
               "id": 10,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -748,7 +748,7 @@
             {
               "id": 11,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -756,13 +756,13 @@
             {
               "id": 11,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -811,7 +811,7 @@
             {
               "id": 12,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -819,13 +819,13 @@
             {
               "id": 12,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -873,7 +873,7 @@
     {
       "id": "4",
       "name": "Yousef Ahmad",
-      "isDeleted": false,
+      "isDeleted": true,
       "courses": [
         {
           "courseId": 102,
@@ -881,7 +881,7 @@
             {
               "id": 13,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -889,13 +889,13 @@
             {
               "id": 13,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -959,7 +959,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1010,7 +1010,7 @@
             {
               "id": 15,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -1018,13 +1018,13 @@
             {
               "id": 15,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 37,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1074,7 +1074,7 @@
             {
               "id": 16,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -1082,13 +1082,13 @@
             {
               "id": 16,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1144,7 +1144,7 @@
             {
               "id": 17,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -1152,7 +1152,7 @@
             {
               "id": 17,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             },
             {
@@ -1164,7 +1164,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1213,7 +1213,7 @@
             {
               "id": 18,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -1221,13 +1221,13 @@
             {
               "id": 18,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1285,13 +1285,13 @@
             {
               "id": 19,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1341,7 +1341,7 @@
             {
               "id": 20,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -1355,7 +1355,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 36,
+            "grade": 38,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1412,7 +1412,7 @@
             {
               "id": 21,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -1420,13 +1420,13 @@
             {
               "id": 21,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1476,7 +1476,7 @@
             {
               "id": 22,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -1490,7 +1490,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1540,7 +1540,7 @@
             {
               "id": 23,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -1554,7 +1554,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1604,7 +1604,7 @@
             {
               "id": 24,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -1612,13 +1612,13 @@
             {
               "id": 24,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1675,7 +1675,7 @@
             {
               "id": 25,
               "name": "Assignment 1",
-              "grade": 5,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -1683,7 +1683,7 @@
             {
               "id": 25,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 7,
               "maxGrade": 10
             },
             {
@@ -1695,7 +1695,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 32,
+            "grade": 38,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1745,7 +1745,7 @@
             {
               "id": 26,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -1753,13 +1753,13 @@
             {
               "id": 26,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 38,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1808,7 +1808,7 @@
             {
               "id": 27,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -1816,13 +1816,13 @@
             {
               "id": 27,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1880,13 +1880,13 @@
             {
               "id": 28,
               "name": "Quiz 1",
-              "grade": 5,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 30,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -1943,7 +1943,7 @@
             {
               "id": 29,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -1951,13 +1951,13 @@
             {
               "id": 29,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 33,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2007,7 +2007,7 @@
             {
               "id": 30,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -2015,13 +2015,13 @@
             {
               "id": 30,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 29,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2071,7 +2071,7 @@
             {
               "id": 31,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -2135,7 +2135,7 @@
             {
               "id": 32,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -2143,13 +2143,13 @@
             {
               "id": 32,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2206,7 +2206,7 @@
             {
               "id": 33,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -2214,7 +2214,7 @@
             {
               "id": 33,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             },
             {
@@ -2226,7 +2226,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2283,13 +2283,13 @@
             {
               "id": 34,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 35,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2339,7 +2339,7 @@
             {
               "id": 35,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -2347,13 +2347,13 @@
             {
               "id": 35,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2402,7 +2402,7 @@
             {
               "id": 36,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -2410,13 +2410,13 @@
             {
               "id": 36,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 34,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2472,7 +2472,7 @@
             {
               "id": 37,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -2480,13 +2480,13 @@
             {
               "id": 37,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2536,7 +2536,7 @@
             {
               "id": 38,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -2544,13 +2544,13 @@
             {
               "id": 38,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2600,7 +2600,7 @@
             {
               "id": 39,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -2608,13 +2608,13 @@
             {
               "id": 39,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2663,7 +2663,7 @@
             {
               "id": 40,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -2671,13 +2671,13 @@
             {
               "id": 40,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 29,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2734,7 +2734,7 @@
             {
               "id": 41,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -2742,7 +2742,7 @@
             {
               "id": 41,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             },
             {
@@ -2754,7 +2754,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2804,7 +2804,7 @@
             {
               "id": 42,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -2868,7 +2868,7 @@
             {
               "id": 43,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -2882,7 +2882,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -2932,7 +2932,7 @@
             {
               "id": 44,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -2940,13 +2940,13 @@
             {
               "id": 44,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3002,7 +3002,7 @@
             {
               "id": 45,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -3010,13 +3010,13 @@
             {
               "id": 45,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 29,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3066,7 +3066,7 @@
             {
               "id": 46,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -3074,13 +3074,13 @@
             {
               "id": 46,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3129,7 +3129,7 @@
             {
               "id": 47,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -3143,7 +3143,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3193,7 +3193,7 @@
             {
               "id": 48,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -3201,13 +3201,13 @@
             {
               "id": 48,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3264,7 +3264,7 @@
             {
               "id": 49,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -3272,7 +3272,7 @@
             {
               "id": 49,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             },
             {
@@ -3284,7 +3284,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 36,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3334,7 +3334,7 @@
             {
               "id": 50,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -3348,7 +3348,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3397,7 +3397,7 @@
             {
               "id": 51,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -3405,13 +3405,13 @@
             {
               "id": 51,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3460,7 +3460,7 @@
             {
               "id": 52,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -3468,13 +3468,13 @@
             {
               "id": 52,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 38,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3530,7 +3530,7 @@
             {
               "id": 53,
               "name": "Assignment 1",
-              "grade": 4,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -3538,13 +3538,13 @@
             {
               "id": 53,
               "name": "Quiz 1",
-              "grade": 5,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 32,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3593,7 +3593,7 @@
             {
               "id": 54,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -3601,13 +3601,13 @@
             {
               "id": 54,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3656,7 +3656,7 @@
             {
               "id": 55,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -3664,13 +3664,13 @@
             {
               "id": 55,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3728,13 +3728,13 @@
             {
               "id": 56,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3791,7 +3791,7 @@
             {
               "id": 57,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -3799,7 +3799,7 @@
             {
               "id": 57,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             },
             {
@@ -3811,7 +3811,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3861,7 +3861,7 @@
             {
               "id": 58,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -3869,13 +3869,13 @@
             {
               "id": 58,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 29,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3925,7 +3925,7 @@
             {
               "id": 59,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -3933,13 +3933,13 @@
             {
               "id": 59,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -3988,7 +3988,7 @@
             {
               "id": 60,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -3996,13 +3996,13 @@
             {
               "id": 60,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 37,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4059,7 +4059,7 @@
             {
               "id": 61,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -4067,13 +4067,13 @@
             {
               "id": 61,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 38,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4123,7 +4123,7 @@
             {
               "id": 62,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -4131,13 +4131,13 @@
             {
               "id": 62,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4187,7 +4187,7 @@
             {
               "id": 63,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -4195,13 +4195,13 @@
             {
               "id": 63,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4250,7 +4250,7 @@
             {
               "id": 64,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -4258,13 +4258,13 @@
             {
               "id": 64,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4320,7 +4320,7 @@
             {
               "id": 65,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -4328,7 +4328,7 @@
             {
               "id": 65,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             },
             {
@@ -4340,7 +4340,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4390,7 +4390,7 @@
             {
               "id": 66,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -4398,13 +4398,13 @@
             {
               "id": 66,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4454,7 +4454,7 @@
             {
               "id": 67,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -4462,13 +4462,13 @@
             {
               "id": 67,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4518,7 +4518,7 @@
             {
               "id": 68,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -4526,13 +4526,13 @@
             {
               "id": 68,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 36,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4589,7 +4589,7 @@
             {
               "id": 69,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -4597,13 +4597,13 @@
             {
               "id": 69,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4653,7 +4653,7 @@
             {
               "id": 70,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -4725,13 +4725,13 @@
             {
               "id": 71,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4780,7 +4780,7 @@
             {
               "id": 72,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -4788,13 +4788,13 @@
             {
               "id": 72,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 38,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4851,7 +4851,7 @@
             {
               "id": 73,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -4859,7 +4859,7 @@
             {
               "id": 73,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             },
             {
@@ -4871,7 +4871,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4920,7 +4920,7 @@
             {
               "id": 74,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -4928,13 +4928,13 @@
             {
               "id": 74,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -4991,13 +4991,13 @@
             {
               "id": 75,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 40,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5047,7 +5047,7 @@
             {
               "id": 76,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -5055,13 +5055,13 @@
             {
               "id": 76,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 48,
+            "grade": 33,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5118,7 +5118,7 @@
             {
               "id": 77,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -5126,13 +5126,13 @@
             {
               "id": 77,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5182,7 +5182,7 @@
             {
               "id": 78,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -5190,13 +5190,13 @@
             {
               "id": 78,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5246,7 +5246,7 @@
             {
               "id": 79,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -5310,7 +5310,7 @@
             {
               "id": 80,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -5318,13 +5318,13 @@
             {
               "id": 80,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 35,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5380,7 +5380,7 @@
             {
               "id": 81,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -5388,7 +5388,7 @@
             {
               "id": 81,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             },
             {
@@ -5400,7 +5400,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5450,7 +5450,7 @@
             {
               "id": 82,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -5458,13 +5458,13 @@
             {
               "id": 82,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5514,7 +5514,7 @@
             {
               "id": 83,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -5522,13 +5522,13 @@
             {
               "id": 83,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5578,7 +5578,7 @@
             {
               "id": 84,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -5586,13 +5586,13 @@
             {
               "id": 84,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5649,7 +5649,7 @@
             {
               "id": 85,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -5657,13 +5657,13 @@
             {
               "id": 85,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 40,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5713,7 +5713,7 @@
             {
               "id": 86,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -5721,13 +5721,13 @@
             {
               "id": 86,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5777,7 +5777,7 @@
             {
               "id": 87,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -5785,13 +5785,13 @@
             {
               "id": 87,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5849,13 +5849,13 @@
             {
               "id": 88,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5912,7 +5912,7 @@
             {
               "id": 89,
               "name": "Assignment 1",
-              "grade": 4,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -5920,13 +5920,13 @@
             {
               "id": 89,
               "name": "Quiz 1",
-              "grade": 4,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 35,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -5976,7 +5976,7 @@
             {
               "id": 90,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -5984,13 +5984,13 @@
             {
               "id": 90,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6039,7 +6039,7 @@
             {
               "id": 91,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -6053,7 +6053,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6103,7 +6103,7 @@
             {
               "id": 92,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -6117,7 +6117,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6181,7 +6181,7 @@
             {
               "id": 93,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             },
             {
@@ -6193,7 +6193,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6243,7 +6243,7 @@
             {
               "id": 94,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -6251,13 +6251,13 @@
             {
               "id": 94,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6307,7 +6307,7 @@
             {
               "id": 95,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -6315,13 +6315,13 @@
             {
               "id": 95,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6371,7 +6371,7 @@
             {
               "id": 96,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -6385,7 +6385,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 37,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6456,7 +6456,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6506,7 +6506,7 @@
             {
               "id": 98,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -6514,13 +6514,13 @@
             {
               "id": 98,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6578,13 +6578,13 @@
             {
               "id": 99,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6634,7 +6634,7 @@
             {
               "id": 100,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -6642,13 +6642,13 @@
             {
               "id": 100,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 48,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6705,7 +6705,7 @@
             {
               "id": 101,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -6713,7 +6713,7 @@
             {
               "id": 101,
               "name": "Quiz 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             },
             {
@@ -6725,7 +6725,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 37,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6789,7 +6789,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6839,7 +6839,7 @@
             {
               "id": 103,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -6847,13 +6847,13 @@
             {
               "id": 103,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6911,13 +6911,13 @@
             {
               "id": 104,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -6982,13 +6982,13 @@
             {
               "id": 105,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 40,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7038,7 +7038,7 @@
             {
               "id": 106,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -7046,13 +7046,13 @@
             {
               "id": 106,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7102,7 +7102,7 @@
             {
               "id": 107,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -7110,13 +7110,13 @@
             {
               "id": 107,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7180,7 +7180,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7237,7 +7237,7 @@
             {
               "id": 109,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -7245,7 +7245,7 @@
             {
               "id": 109,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             },
             {
@@ -7257,7 +7257,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7307,7 +7307,7 @@
             {
               "id": 110,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -7315,13 +7315,13 @@
             {
               "id": 110,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 33,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7379,13 +7379,13 @@
             {
               "id": 111,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7434,7 +7434,7 @@
             {
               "id": 112,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -7448,7 +7448,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7505,7 +7505,7 @@
             {
               "id": 113,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -7513,13 +7513,13 @@
             {
               "id": 113,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 34,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7569,7 +7569,7 @@
             {
               "id": 114,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -7577,13 +7577,13 @@
             {
               "id": 114,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7632,7 +7632,7 @@
             {
               "id": 115,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -7640,13 +7640,13 @@
             {
               "id": 115,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7696,7 +7696,7 @@
             {
               "id": 116,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -7767,7 +7767,7 @@
             {
               "id": 117,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -7775,7 +7775,7 @@
             {
               "id": 117,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             },
             {
@@ -7787,7 +7787,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7845,13 +7845,13 @@
             {
               "id": 118,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7901,7 +7901,7 @@
             {
               "id": 119,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -7909,13 +7909,13 @@
             {
               "id": 119,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -7964,7 +7964,7 @@
             {
               "id": 120,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -7972,13 +7972,13 @@
             {
               "id": 120,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8035,7 +8035,7 @@
             {
               "id": 121,
               "name": "Assignment 1",
-              "grade": 4,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -8043,13 +8043,13 @@
             {
               "id": 121,
               "name": "Quiz 1",
-              "grade": 5,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 36,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8098,7 +8098,7 @@
             {
               "id": 122,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -8106,13 +8106,13 @@
             {
               "id": 122,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8161,7 +8161,7 @@
             {
               "id": 123,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8169,13 +8169,13 @@
             {
               "id": 123,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8225,7 +8225,7 @@
             {
               "id": 124,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8233,13 +8233,13 @@
             {
               "id": 124,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8296,7 +8296,7 @@
             {
               "id": 125,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8304,13 +8304,13 @@
             {
               "id": 125,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8368,13 +8368,13 @@
             {
               "id": 126,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 49,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8423,7 +8423,7 @@
             {
               "id": 127,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8431,13 +8431,13 @@
             {
               "id": 127,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8487,7 +8487,7 @@
             {
               "id": 128,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8495,13 +8495,13 @@
             {
               "id": 128,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8558,7 +8558,7 @@
             {
               "id": 129,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -8566,13 +8566,13 @@
             {
               "id": 129,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8622,7 +8622,7 @@
             {
               "id": 130,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -8630,13 +8630,13 @@
             {
               "id": 130,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8686,7 +8686,7 @@
             {
               "id": 131,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -8694,13 +8694,13 @@
             {
               "id": 131,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8750,7 +8750,7 @@
             {
               "id": 132,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -8758,13 +8758,13 @@
             {
               "id": 132,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 38,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8821,7 +8821,7 @@
             {
               "id": 133,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -8829,13 +8829,13 @@
             {
               "id": 133,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 48,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8884,7 +8884,7 @@
             {
               "id": 134,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -8892,13 +8892,13 @@
             {
               "id": 134,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 34,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -8948,7 +8948,7 @@
             {
               "id": 135,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -8962,7 +8962,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9012,7 +9012,7 @@
             {
               "id": 136,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9020,13 +9020,13 @@
             {
               "id": 136,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 38,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9083,7 +9083,7 @@
             {
               "id": 137,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9091,13 +9091,13 @@
             {
               "id": 137,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9147,7 +9147,7 @@
             {
               "id": 138,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9155,13 +9155,13 @@
             {
               "id": 138,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9211,7 +9211,7 @@
             {
               "id": 139,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -9219,13 +9219,13 @@
             {
               "id": 139,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 32,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9275,7 +9275,7 @@
             {
               "id": 140,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -9289,7 +9289,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 37,
+            "grade": 44,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9346,7 +9346,7 @@
             {
               "id": 141,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9354,13 +9354,13 @@
             {
               "id": 141,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 48,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9424,7 +9424,7 @@
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9474,7 +9474,7 @@
             {
               "id": 143,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -9482,13 +9482,13 @@
             {
               "id": 143,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9538,7 +9538,7 @@
             {
               "id": 144,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -9546,13 +9546,13 @@
             {
               "id": 144,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 45,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9609,7 +9609,7 @@
             {
               "id": 145,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9617,13 +9617,13 @@
             {
               "id": 145,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 39,
+            "grade": 36,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9673,7 +9673,7 @@
             {
               "id": 146,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
@@ -9681,13 +9681,13 @@
             {
               "id": 146,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9736,7 +9736,7 @@
             {
               "id": 147,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -9744,13 +9744,13 @@
             {
               "id": 147,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 41,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9808,13 +9808,13 @@
             {
               "id": 148,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 36,
+            "grade": 37,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9879,13 +9879,13 @@
             {
               "id": 149,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 10,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 50,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9942,13 +9942,13 @@
             {
               "id": 150,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 45,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -9998,7 +9998,7 @@
             {
               "id": 151,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -10006,13 +10006,13 @@
             {
               "id": 151,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 40,
+            "grade": 30,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10062,7 +10062,7 @@
             {
               "id": 152,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -10070,13 +10070,13 @@
             {
               "id": 152,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 40,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10133,7 +10133,7 @@
             {
               "id": 153,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
@@ -10141,13 +10141,13 @@
             {
               "id": 153,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 9,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 46,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10197,7 +10197,7 @@
             {
               "id": 154,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
@@ -10205,13 +10205,13 @@
             {
               "id": 154,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 5,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 44,
+            "grade": 28,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10261,7 +10261,7 @@
             {
               "id": 155,
               "name": "Assignment 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -10269,13 +10269,13 @@
             {
               "id": 155,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 43,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10325,7 +10325,7 @@
             {
               "id": 156,
               "name": "Assignment 1",
-              "grade": 6,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -10333,13 +10333,13 @@
             {
               "id": 156,
               "name": "Quiz 1",
-              "grade": 7,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 35,
+            "grade": 41,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10396,7 +10396,7 @@
             {
               "id": 157,
               "name": "Assignment 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -10404,13 +10404,13 @@
             {
               "id": 157,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 47,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10460,7 +10460,7 @@
             {
               "id": 158,
               "name": "Assignment 1",
-              "grade": 8,
+              "grade": 6,
               "maxGrade": 10
             }
           ],
@@ -10468,13 +10468,13 @@
             {
               "id": 158,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 42,
+            "grade": 38,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10524,7 +10524,7 @@
             {
               "id": 159,
               "name": "Assignment 1",
-              "grade": 10,
+              "grade": 8,
               "maxGrade": 10
             }
           ],
@@ -10532,13 +10532,13 @@
             {
               "id": 159,
               "name": "Quiz 1",
-              "grade": 9,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
           "exam": {
             "name": "Final Exam",
-            "grade": 46,
+            "grade": 42,
             "maxGrade": 50,
             "deadline": "2026-10-15T23:59:59Z"
           },
@@ -10596,7 +10596,7 @@
             {
               "id": 160,
               "name": "Quiz 1",
-              "grade": 8,
+              "grade": 7,
               "maxGrade": 10
             }
           ],
@@ -10769,11 +10769,10 @@
           }
         }
       ],
-      "id": "jcKwMF_e1Ek"
+      "id": "-PODHAI2EfA"
     },
     {
-      "id": "UrxXbJ693mE",
-      "name": "t",
+      "name": "ahmad bata",
       "isDeleted": false,
       "courses": [
         {
@@ -10801,462 +10800,11 @@
             "deadline": ""
           },
           "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ]
-    },
-    {
-      "id": "Ik5hCmp3Y70",
-      "name": "t",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "106",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ]
-    },
-    {
-      "id": "777",
-      "name": "T",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "101",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ]
-    },
-    {
-      "id": "0",
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ]
-    },
-    {
-      "id": "55",
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "105",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ]
-    },
-    {
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
+            "percentage": 70
           }
         }
       ],
-      "id": "W13awm-"
-    },
-    {
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ],
-      "id": "GABuse_"
-    },
-    {
-      "name": "t",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "101",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "daysPresent": 0,
-            "daysAbsent": 0,
-            "totalDays": 0,
-            "presentDates": [],
-            "absentDates": []
-          }
-        }
-      ],
-      "id": "yAWBYzA"
-    },
-    {
-      "name": "Test1",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "102",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "percentage": 48
-          }
-        }
-      ],
-      "id": "61r2NXd"
-    },
-    {
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "103",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "percentage": 8
-          }
-        }
-      ],
-      "id": "jXo6E4X"
-    },
-    {
-      "name": "oma",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "103",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "percentage": 98
-          }
-        }
-      ],
-      "id": "WYSgvry"
-    },
-    {
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "104",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "percentage": 40
-          }
-        }
-      ],
-      "id": "gq_e0UR"
-    },
-    {
-      "name": "rama",
-      "isDeleted": false,
-      "courses": [
-        {
-          "courseId": "103",
-          "assignments": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "quizzes": [
-            {
-              "id": 0,
-              "name": "",
-              "grade": 0,
-              "maxGrade": 0
-            }
-          ],
-          "exam": {
-            "name": "",
-            "grade": 0,
-            "maxGrade": 0,
-            "deadline": ""
-          },
-          "attendance": {
-            "percentage": 20
-          }
-        }
-      ],
-      "id": "Ug7wfK8AhOs"
+      "id": "HJP08Nn7234"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

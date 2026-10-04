@@ -64,7 +64,6 @@ async function loadCourses() {
 
   const currentUser = JSON.parse(localStorage.getItem("user"));
 
-  // only the courses that belong to the logged-in teacher
   myCourses = courses.filter(
     (c) => String(c.teacherId) === String(currentUser.id),
   );
@@ -87,7 +86,6 @@ async function loadStudents() {
   const res = await fetch(API);
   const data = await res.json();
 
-  // only students enrolled in at least one of this teacher's courses
   students = data.filter((student) =>
     (student.courses || []).some((c) =>
       myCourseIds.includes(String(c.courseId)),
@@ -108,6 +106,15 @@ function getLetter(percent) {
   return "F";
 }
 
+function getAttendancePercent(attendance) {
+  if (!attendance) return null;
+  if (typeof attendance.percentage === "number") return attendance.percentage;
+  if (attendance.totalDays) {
+    return Math.round((attendance.daysPresent / attendance.totalDays) * 100);
+  }
+  return null;
+}
+
 function calculate(student) {
   let got = 0,
     max = 0,
@@ -116,7 +123,6 @@ function calculate(student) {
 
   //array for going over the courses of the student
   (student.courses || []).forEach((course) => {
-    // ignore courses that belong to other teachers
     if (!myCourseIds.includes(String(course.courseId))) return;
 
     // if a specific course is selected, ignore other courses
@@ -137,8 +143,9 @@ function calculate(student) {
       }
     });
 
-    if (course.attendance) {
-      present += course.attendance.percentage;
+    const pct = getAttendancePercent(course.attendance);
+    if (pct !== null) {
+      present += pct;
       total += 100;
     }
   });
@@ -152,7 +159,6 @@ function calculate(student) {
 // Render the student list based on the current filters and search text
 function render() {
   const list = students.filter((s) => {
-    // hide archived students
     if (s.isDeleted) return false;
 
     if (selectedCourse !== "all") {
@@ -218,7 +224,6 @@ form.addEventListener("submit", async (e) => {
   if (studentId.value) {
     const student = students.find((s) => String(s.id) === studentId.value);
 
-    // edit the course that belongs to this teacher, not courses[0]
     const course = student.courses.find((c) =>
       myCourseIds.includes(String(c.courseId)),
     );
@@ -271,20 +276,17 @@ tableBody.addEventListener("click", async (e) => {
 
     modalTitle.textContent = "Edit student";
 
-    // Keep the ID hidden so we know which student we are editing
     studentId.value = id;
 
-    // Show student's current name
     studentName.value = student.name;
 
-    // Show the student's course (this teacher's one) and attendance
     const course = (student.courses || []).find((c) =>
       myCourseIds.includes(String(c.courseId)),
     );
 
     if (course) {
       enrolledCourse.value = course.courseId;
-      attendance.value = course.attendance?.percentage ?? "";
+      attendance.value = getAttendancePercent(course.attendance) ?? "";
     }
 
     modal.showModal();
