@@ -10769,10 +10769,11 @@
           }
         }
       ],
-      "id": "-PODHAI2EfA"
+      "id": "jcKwMF_e1Ek"
     },
     {
-      "name": "ahmad bata",
+      "id": "UrxXbJ693mE",
+      "name": "t",
       "isDeleted": false,
       "courses": [
         {
@@ -10800,11 +10801,470 @@
             "deadline": ""
           },
           "attendance": {
+<<<<<<<<< Temporary merge branch 1
             "percentage": 70
           }
         }
       ],
       "id": "HJP08Nn7234"
+=========
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "Ik5hCmp3Y70",
+      "name": "t",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "106",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "777",
+      "name": "T",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "101",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "0",
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "105",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ],
+      "id": "W13awm-"
+    },
+    {
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ],
+      "id": "GABuse_"
+    },
+    {
+      "name": "t",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "101",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "daysPresent": 0,
+            "daysAbsent": 0,
+            "totalDays": 0,
+            "presentDates": [],
+            "absentDates": []
+          }
+        }
+      ],
+      "id": "yAWBYzA"
+    },
+    {
+      "name": "Test1",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "102",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 48
+          }
+        }
+      ],
+      "id": "61r2NXd"
+    },
+    {
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "103",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 8
+          }
+        }
+      ],
+      "id": "jXo6E4X"
+    },
+    {
+      "name": "oma",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "103",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 98
+          }
+        }
+      ],
+      "id": "WYSgvry"
+    },
+    {
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "104",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 40
+          }
+        }
+      ],
+      "id": "gq_e0UR"
+    },
+    {
+      "name": "rama",
+      "isDeleted": false,
+      "courses": [
+        {
+          "courseId": "103",
+          "assignments": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "quizzes": [
+            {
+              "id": 0,
+              "name": "",
+              "grade": 0,
+              "maxGrade": 0
+            }
+          ],
+          "exam": {
+            "name": "",
+            "grade": 0,
+            "maxGrade": 0,
+            "deadline": ""
+          },
+          "attendance": {
+            "percentage": 20
+          }
+        }
+      ],
+      "id": "Ug7wfK8AhOs"
+>>>>>>>>> Temporary merge branch 2
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
