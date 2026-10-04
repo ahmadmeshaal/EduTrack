@@ -16,8 +16,11 @@
 
     
       <section class="Dynmic">
-        <div class="exam-btn">
-          <button class="add-exam-btn" id="addQuizBtn">Add Quiz</button>
+               <div class="exam-top-bar">
+          <select id="quizCourseFilter" class="exam-filter">
+            <option value="all">All courses</option>
+          </select>
+          <button class="add-exam-btn" id="addQuizBtn">+ Add Quiz</button>
         </div>
 
         <div id="addCards"></div>
@@ -27,6 +30,6 @@
       </section>
   
 
-    <script src="/js/quiz.js"></script>
+    <script type="module" src="/js/quiz.js"></script>
   </body>
 </html>
