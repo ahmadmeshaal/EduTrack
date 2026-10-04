@@ -64,7 +64,6 @@ async function loadCourses() {
 
   const currentUser = JSON.parse(localStorage.getItem("user"));
 
-  // only the courses that belong to the logged-in teacher
   myCourses = courses.filter(
     (c) => String(c.teacherId) === String(currentUser.id),
   );
@@ -87,7 +86,6 @@ async function loadStudents() {
   const res = await fetch(API);
   const data = await res.json();
 
-  // only students enrolled in at least one of this teacher's courses
   students = data.filter((student) =>
     (student.courses || []).some((c) =>
       myCourseIds.includes(String(c.courseId)),
@@ -125,7 +123,6 @@ function calculate(student) {
     total = 0;
 
   (student.courses || []).forEach((course) => {
-    // ignore courses that belong to other teachers
     if (!myCourseIds.includes(String(course.courseId))) return;
 
     if (
@@ -160,7 +157,6 @@ function calculate(student) {
 
 function render() {
   const list = students.filter((s) => {
-    // hide archived students
     if (s.isDeleted) return false;
 
     if (selectedCourse !== "all") {
@@ -223,7 +219,6 @@ form.addEventListener("submit", async (e) => {
   if (studentId.value) {
     const student = students.find((s) => String(s.id) === studentId.value);
 
-    // edit the course that belongs to this teacher, not courses[0]
     const course = student.courses.find((c) =>
       myCourseIds.includes(String(c.courseId)),
     );
@@ -276,13 +271,10 @@ tableBody.addEventListener("click", async (e) => {
 
     modalTitle.textContent = "Edit student";
 
-    // Keep the ID hidden so we know which student we are editing
     studentId.value = id;
 
-    // Show student's current name
     studentName.value = student.name;
 
-    // Show the student's course (this teacher's one) and attendance
     const course = (student.courses || []).find((c) =>
       myCourseIds.includes(String(c.courseId)),
     );
