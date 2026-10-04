@@ -1,18 +1,24 @@
+import { authGuard } from "./authGuard.js";
 
+authGuard();
+const user = JSON.parse(localStorage.getItem("user"));
 
 const list = document.getElementById("addCards");
 
-const coursesList = [
-  { id: "101", name: "Java" },
-  { id: "102", name: "Database" },
-  { id: "103", name: "Web Development" },
-  { id: "104", name: "JavaScript" },
-  { id: "105", name: "Software Testing" },
-  { id: "106", name: "Computer Networks" },
-  { id: "107", name: "Python" },
-  { id: "108", name: "Algorithms" },
-];
+let coursesList = [];
+let selectedCourse = "all";
 
+function loadCourses() {
+  return fetch("http://localhost:3000/courses")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (courses) {
+      coursesList = courses.filter(function (course) {
+        return String(course.teacherId) === String(user.id);
+      });
+    });
+}
 function loadFromDB() {
   fetch("http://localhost:3000/students")
     .then(function (response) {
@@ -46,8 +52,21 @@ function render(students) {
 
   courses.forEach(function (course) {
     let courseInfo = coursesList.find(function (item) {
-      return item.id === String(course.courseId);
+      return String(item.id) === String(course.courseId);
     });
+
+    if (!courseInfo) {
+      return;
+    }
+
+    let courseName = courseInfo.name;
+
+    if (
+      selectedCourse !== "all" &&
+      String(course.courseId) !== selectedCourse
+    ) {
+      return;
+    }
 
     course.quizzes.forEach(function (quiz) {
       let div = document.createElement("div");
@@ -62,8 +81,7 @@ function render(students) {
               ${quiz.name}
             </span>
           <span class="detail">
-           <span>${courseInfo.name}</span>
-            <span>${quiz.maxGrade}</span>
+           <span>Course: ${courseName}</span>            <span>Grade: ${quiz.maxGrade}</span>
           </span>
           </div>
 
@@ -99,7 +117,7 @@ function addQuiz(courseId, quizName, maxGrade) {
     .then(function (students) {
       students.forEach(function (student) {
         student.courses.forEach(function (course) {
-          if (course.courseId === courseId) {
+          if (String(course.courseId) === String(courseId)) {
             course.quizzes.push({
               id: quizId,
               name: quizName,
@@ -164,7 +182,6 @@ function editQuiz(quizId) {
       return response.json();
     })
     .then(function (students) {
-
       let selectedQuiz = null;
 
       students.forEach(function (student) {
@@ -232,28 +249,28 @@ function editQuiz(quizId) {
         </div>
       `;
 
-      document.getElementById("cancelEditQuiz").addEventListener("click", function () {
+      document
+        .getElementById("cancelEditQuiz")
+        .addEventListener("click", function () {
           quizPopup.classList.remove("active");
         });
 
-      document.getElementById("editQuizForm").addEventListener("submit", function (event) {
+      document
+        .getElementById("editQuizForm")
+        .addEventListener("submit", function (event) {
           event.preventDefault();
 
-          let newName =
-            document.getElementById("editQuizName").value;
+          let newName = document.getElementById("editQuizName").value;
 
-          let newGrade =
-            Number(document.getElementById("editQuizGrade").value);
+          let newGrade = Number(document.getElementById("editQuizGrade").value);
 
           students.forEach(function (student) {
             student.courses.forEach(function (course) {
               course.quizzes.forEach(function (quiz) {
-
                 if (quiz.id === quizId) {
                   quiz.name = newName;
                   quiz.grade = newGrade;
                 }
-
               });
             });
 
@@ -261,12 +278,12 @@ function editQuiz(quizId) {
               method: "PATCH",
 
               headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
               },
 
               body: JSON.stringify({
-                courses: student.courses
-              })
+                courses: student.courses,
+              }),
             });
           });
 
@@ -342,7 +359,9 @@ addQuizBtn.addEventListener("click", function () {
     quizPopup.classList.remove("active");
   });
 
-  document.getElementById("quizForm").addEventListener("submit",function(event) {
+  document
+    .getElementById("quizForm")
+    .addEventListener("submit", function (event) {
       event.preventDefault();
 
       let quizName = document.getElementById("quizName").value;
@@ -353,5 +372,23 @@ addQuizBtn.addEventListener("click", function () {
       quizPopup.classList.remove("active");
     });
 });
+const quizCourseFilter = document.getElementById("quizCourseFilter");
 
-loadFromDB();
+quizCourseFilter.addEventListener("change", function () {
+  selectedCourse = quizCourseFilter.value;
+  loadFromDB();
+});
+
+window.editQuiz = editQuiz;
+window.deleteQuiz = deleteQuiz;
+
+loadCourses().then(function () {
+  coursesList.forEach(function (course) {
+    let option = document.createElement("option");
+    option.value = course.id;
+    option.textContent = course.name;
+    quizCourseFilter.appendChild(option);
+  });
+
+  loadFromDB();
+});

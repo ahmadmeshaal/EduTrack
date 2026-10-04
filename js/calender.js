@@ -95,16 +95,6 @@ async function addExamToCalendar(examName, courseName, deadline) {
     );
   }
 }
-function waitFor(cond) {
-  return new Promise(function (resolve) {
-    const t = setInterval(function () {
-      if (cond()) {
-        clearInterval(t);
-        resolve();
-      }
-    }, 100);
-  });
-}
 
 async function startGoogle() {
   await waitFor(function () {
@@ -113,5 +103,6 @@ async function startGoogle() {
   gapiLoaded();
   gisLoaded();
 }
+window.addExamToCalendar = addExamToCalendar;
 
 startGoogle();

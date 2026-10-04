@@ -21,13 +21,11 @@
 
   
     <section class="Dynmic">
-
-      <div class="exam-btn">
-
-        <button class="add-exam-btn" id="addAssignmentBtn">
-          Add Assignment
-        </button>
-
+      <div class="exam-top-bar">
+        <select id="assignmentCourseFilter" class="exam-filter">
+          <option value="all">All courses</option>
+        </select>
+        <button class="add-exam-btn" id="addAssignmentBtn">+ Add Assignment</button>
       </div>
 
       <div id="addCards"></div>
@@ -38,7 +36,7 @@
 
     </section>
 
-  <script src="/js/assignment.js"></script>
+  <script type="module" src="/js/assignment.js"></script>
 
 </body>
 
