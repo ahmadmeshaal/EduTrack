@@ -95,8 +95,8 @@ async function loadStudents() {
   render();
 }
 
-function formatId(id) {
-  return /^\d+$/.test(id) ? "ST-" + id.padStart(3, "0") : id;
+function formatId(index) {
+  return "ST-" + String(index + 1).padStart(3, "0");
 }
 
 function getLetter(percent) {
@@ -180,7 +180,7 @@ function render() {
   }
 
   tableBody.innerHTML = list
-    .map((s) => {
+    .map((s, i) => {
       const info = calculate(s);
       const gradeText =
         info.grade === null
