@@ -94,9 +94,8 @@ async function loadStudents() {
 
   render();
 }
-
-function formatId(id) {
-  return /^\d+$/.test(id) ? "ST-" + id.padStart(3, "0") : id;
+function formatId(index) {
+  return "ST-" + index + 1;
 }
 
 function getLetter(percent) {
@@ -122,9 +121,11 @@ function calculate(student) {
     present = 0,
     total = 0;
 
+  //array for going over the courses of the student
   (student.courses || []).forEach((course) => {
     if (!myCourseIds.includes(String(course.courseId))) return;
 
+    // if a specific course is selected, ignore other courses
     if (
       selectedCourse !== "all" &&
       String(course.courseId) !== selectedCourse
@@ -155,6 +156,7 @@ function calculate(student) {
   };
 }
 
+// Render the student list based on the current filters and search text
 function render() {
   const list = students.filter((s) => {
     if (s.isDeleted) return false;
@@ -166,6 +168,7 @@ function render() {
       if (!inCourse) return false;
     }
 
+    //filter by search text (name or ID)
     const text = searchText.toLowerCase();
     return (
       s.name.toLowerCase().includes(text) ||
@@ -174,13 +177,15 @@ function render() {
     );
   });
 
+  //if no students match the filters, show a message
   if (list.length === 0) {
     tableBody.innerHTML = `<tr><td colspan="5" class="empty">No students found</td></tr>`;
     return;
   }
 
+  // Generate the HTML for the student list
   tableBody.innerHTML = list
-    .map((s) => {
+    .map((s, i) => {
       const info = calculate(s);
       const gradeText =
         info.grade === null
@@ -196,7 +201,7 @@ function render() {
             <span>${s.name}</span>
           </div>
         </td>
-        <td>${formatId(String(s.id))}</td>
+        <td>${formatId(s.id)}</td>
         <td class="grade">${gradeText}</td>
         <td>${attText}</td>
         <td class="right actions">
